@@ -7,14 +7,23 @@
   <title>SetCTax</title>
   <link href='/style.css' rel='stylesheet'>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Poppins font to body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 
 </head>
 
 <body>
   <header
     class="navbar flex flex-row justify-between items-center bg-base-100 shadow-[8px_8px_35px_-8px_rgba(0,0,0,0.15)] mb-5 pl-8">
-    <div class="flex-1 my-3">
-      <svg width="111" height="44" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex-1 md:ml-10">
+      <svg class="w-[111px] h-[44px] my-4 md:my-0 md:w-[181px] md:h-[114px]" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_2811)">
           <path
             d="M21.7168 24.04H23.4187C24.602 24.04 25.3805 24.4551 25.3805 25.5463C25.3805 26.6375 24.602 27.1239 23.4187 27.1239H22.1358V29.7407H21.7158V24.0411L21.7168 24.04ZM23.311 26.7874C24.3654 26.7874 24.9505 26.3866 24.9505 25.5463C24.9505 24.706 24.3654 24.3766 23.311 24.3766H22.1368V26.7874H23.311ZM23.7239 26.8904L25.4933 29.7397H25.0099L23.3251 27.0056L23.7239 26.8894V26.8904Z"
@@ -141,54 +150,58 @@
       <div id="" class="flex flex-col items-center">
         <section class="flex flex-col">
           <p
-            class="leading-tight text-2xl md:text-[56px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center my-3 py-3">
-            Congrats! You Have Been 
-Pre-Qualified.</p>
+            class="leading-tight text-2xl md:text-[56px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center mt-3 md:mt-0 mb-3 md:pt-0 pt-3 pb-3">
+            Congrats! You Have Been Pre-Qualified.</p>
         </section>
         <section class="step-container w-full flex justify-center">
-          <div class="steps flex justify-between items-center bg-[#013911] w-fit min-w-[70%] md:min-w-[40%] h-1 m-10">
+          <div class="steps flex justify-between items-center w-fit gap-1 w-[80%] md:w-[468px] h-2 mx-5 md:my-10 my-10">
             <div id="screen1-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full m-0 p-0">
+              class="step flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
               <!-- <div class="step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0"><svg width="83" height="41"
               viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div> -->
-              <div class="step-progress w-[21px] h-[21px] bg-[#013911] rounded-full"></div>
+              <div class="step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full"></div>
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen2-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] md:border-[3px] bg-white border-2 border-[#013911] rounded-full">
               <!-- <div class="step-progress w-[32px] h-[32px] bg-[#013911] rounded-full"></div> -->
+              2
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen3-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full">
+              3
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen4-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
-            </div>
-            
+              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full">
+              4
+            </div> 
           </div>
         </section>
 
         <section id="screens">
           <div id="screen1" class="question flex flex-col justify-center items-center">
-            <p class="font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Fill out your information below to know your <span class="font-semibold">exact refund amount.</span>
+            <p class="text-[32px] md:w-[648px] text-center font-normal mx-3 px-3 mt-8">
+              Fill out your information below to know your <span class="font-bold">exact refund amount.</span>
             </p>
-            <div class="options flex gap-[10px] w-full justify-center items-center flex-col mt-8 md:mt-14 mb-4">
-                <div class="mb-6 w-[90%] md:w-[70%]">
-                    <label for="firstname" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">First Name</label>
-                    <input type="text" id="firstname" placeholder="Enter Your First Name" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+            <div class="options flex gap-[10px] justify-center items-center flex-col mt-8 md:mt-14 mb-4">
+                <div class="mb-6 w-[90%] md:w-[648px]">
+                    <label for="firstname" class="block mb-2 text-sm font-medium text-[#014012]">First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter Your First Name" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
-                <div class="mb-6 w-[90%] md:w-[70%]">
-                    <label for="lastname" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">Last Name</label>
-                    <input type="text" id="lastname" placeholder="Enter Your Last Name" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+                <div class="mb-6 w-[90%] md:w-[648px]">
+                    <label for="lastname" class="block mb-2 text-sm font-medium text-[#014012]">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter Your Last Name" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
             </div>
 
             <button
-            class="border w-[200px] bg-[#013911] border rounded-[5px] pt-[15px] pr-[73px] pb-[15px] pl-[73px] text-[#DEECE3] mb-14 font-bold"
+            class="border w-[200px] md:w-[600px] md:h-[80px] md:text-[28px] bg-[#013911] border md:w-96 rounded-[5px] pt-[15px] pr-[73px] pb-[15px] pl-[73px] text-[#DEECE3] mb-14 font-bold"
             onclick="onNextButtonClick('screen1','screen2')">Next</button> 
 
             <div id="warning" class="flex flex-row w-[90%] justify-center items-center gap-2 mb-14">
@@ -206,18 +219,18 @@ Pre-Qualified.</p>
                 Fill out your information below to know your <span class="font-semibold">exact refund amount.</span>
               </p>
             <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-                <div class="mb-6 w-[90%] md:w-[70%]">
+                <div class="mb-6 w-[90%] md:w-[648px]">
                     <label for="email" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">E-mail</label>
-                    <input type="email" id="email" placeholder="Enter Your Email Address" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+                    <input type="email" id="email" placeholder="Enter Your Email Address" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
             </div>
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                class="border w-40 md:w-96 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] bg-[#013911] border md:w-[600px] rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
                 onclick="onNextButtonClick('screen2','screen3')">Next</button>
                 <button
-                  class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
+                  class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
                   onclick="onBackButtonClick('screen2','screen1')">Back</button>
             </div>
             <div id="warning" class="flex flex-row w-[90%] justify-center items-center gap-2 mb-14">
@@ -234,18 +247,18 @@ Pre-Qualified.</p>
                 Fill out your information below to know your <span class="font-semibold">exact refund amount.</span>
               </p>
             <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-                <div class="mb-6 w-[90%] md:w-[70%]">
+                <div class="mb-6 w-[90%] md:w-[648px]">
                     <label for="phone" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="+1 (858) 555-1234" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+                    <input type="tel" id="phone" placeholder="+1 (858) 555-1234" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
             </div>
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                  class="border w-40 md:w-96 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                  class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
                   onclick="onNextButtonClick('screen3','screen4')">Get Your Estimate</button>
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
+                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
                 onclick="onBackButtonClick('screen3','screen2')">Back</button>
             </div>
 
@@ -260,22 +273,22 @@ Pre-Qualified.</p>
                 Enter Your password to create an account. Here you can check the <span class="font-semibold">exact refund amount.</span>
               </p>
               <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-                <div class="mb-6 w-[90%] md:w-[70%]">
+                <div class="mb-6 w-[90%] md:w-[648px]">
                     <label for="password" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">Create Password</label>
-                    <input type="password" id="password" placeholder="Enter Password" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+                    <input type="password" id="password" placeholder="Enter Password" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
-                <div class="mb-6 w-[90%] md:w-[70%]">
+                <div class="mb-6 w-[90%] md:w-[648px]">
                     <label for="confirm_password" class="block mb-2 text-sm font-medium text-[#014012] dark:text-white">Confirm Password</label>
-                    <input type="password" id="confirm_password" placeholder="Re-Enter Password" class="placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
+                    <input type="password" id="confirm_password" placeholder="Re-Enter Password" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
                 </div>
             </div>
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                class="border w-40 md:w-96 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
                 >Create Account</button>
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
+                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2"
                 onclick="onBackButtonClick('screen4','screen3')">Back</button>
             </div>
 
@@ -449,24 +462,24 @@ Pre-Qualified.</p>
 
       var stepCompleteDiv = document.createElement('div');
       stepCompleteDiv.className = 'step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0';
-      stepCompleteDiv.innerHTML = '<svg width="53" height="29" viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+      stepCompleteDiv.innerHTML = '<svg class="w-[46px] h-[22px] md:w-[67px] md:h-[33px]" width="46" height="22" viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745" stroke-linecap="round" stroke-linejoin="round" /></svg>';
       document.getElementById(currentScreenId + '-step').innerHTML = '';
       document.getElementById(currentScreenId + '-step').appendChild(stepCompleteDiv);
 
       document.getElementById(nextScreenId + '-step').innerHTML = '';
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
     }
     function onBackButtonClick(currentScreenId, nextScreenId) {
       document.getElementById(currentScreenId).classList.add('hidden');
       document.getElementById(nextScreenId).classList.remove('hidden');
 
-      document.getElementById(currentScreenId + '-step').innerHTML = '';
+      document.getElementById(currentScreenId + '-step').innerHTML = currentScreenId[currentScreenId.length - 1] ;
 
       document.getElementById(nextScreenId + '-step').innerHTML = '';
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
     }
     function submitHandling() {
@@ -484,7 +497,7 @@ Pre-Qualified.</p>
         step.innerHTML = '';
       });
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById('screen1-step').appendChild(stepProgressDiv);
     }
   </script>
