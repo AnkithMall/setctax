@@ -7,14 +7,23 @@
   <title>SetCTax</title>
   <link href='/style.css' rel='stylesheet'>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Poppins font to body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 
 </head>
 
 <body>
   <header
     class="navbar flex flex-row justify-between items-center bg-base-100 shadow-[8px_8px_35px_-8px_rgba(0,0,0,0.15)] mb-5 pl-8">
-    <div class="flex-1 my-3">
-      <svg width="111" height="44" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex-1 md:ml-10">
+      <svg class="w-[111px] h-[44px] my-4 md:my-0 md:w-[181px] md:h-[114px]" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_2811)">
           <path
             d="M21.7168 24.04H23.4187C24.602 24.04 25.3805 24.4551 25.3805 25.5463C25.3805 26.6375 24.602 27.1239 23.4187 27.1239H22.1358V29.7407H21.7158V24.0411L21.7168 24.04ZM23.311 26.7874C24.3654 26.7874 24.9505 26.3866 24.9505 25.5463C24.9505 24.706 24.3654 24.3766 23.311 24.3766H22.1368V26.7874H23.311ZM23.7239 26.8904L25.4933 29.7397H25.0099L23.3251 27.0056L23.7239 26.8894V26.8904Z"
@@ -82,7 +91,7 @@
       </svg>
     </div>
 
-    <div class="flex-none md:flex md:flex-row md:gap-[20px] mr-4 md:justify-center md:items-center md:my-4">
+    <!-- <div class="flex-none md:flex md:flex-row md:gap-[20px] mr-4 md:justify-center md:items-center md:my-0">
       <a class="font-normal text-base text-[#006838] hidden md:block">
         About
       </a>
@@ -134,60 +143,68 @@
           </defs>
         </svg>
       </button>
-    </div>
+    </div> -->
   </header>
   <content class="flex flex-col items-center justify-center">
-    <div class="flex flex-col md:w-[65%]">
-      <div id="questinaire">
+    <div class="flex flex-col md:w-full">
+      <div id="questinaire" class="flex flex-col items-center">
         <section class="flex flex-col">
           <h2
-            class="text-2xl md:text-[56px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center my-3 py-3">
+            class="text-[24px] md:text-[56px] font-bold text-transparent md:leading-[38px] bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center my-0 md:my-3 py-0 md:py-3">
             Let’s See if You Qualify!</h2>
-          <p class="text-center py-8 text-2xl mx-3 px-3">
-            You may be eligible for up to <strong>$32,220</strong> in credit back from the government.
+          <p class="text-center text-[17.04px] md:text-[28px] md:leading-[25px] mx-3 px-0 md:px-3 text-[#333333]">
+            Up to <strong class="text-[18.93px] md:text-[24px]">$32,220</strong> in credits back from government
           </p>
         </section>
         <section class="step-container w-full flex justify-center">
-          <div class="steps flex justify-between items-center bg-[#013911] w-fit min-w-[70%] md:min-w-[40%] h-1 m-10">
+          <div class="steps flex justify-between items-center w-fit gap-1 w-[339px] md:w-[468px] h-2 mx-5 md:my-10 mt-8">
             <div id="screen1-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full m-0 p-0">
+              class="step text-[#013911] text-[13.46px] md:text-[19.66px] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
               <!-- <div class="step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0"><svg width="83" height="41"
               viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div> -->
-              <div class="step-progress w-[21px] h-[21px] bg-[#013911] rounded-full"></div>
+              <div class="step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full"></div>
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[39.2px] md:h-[9px] rounded-xl"></div>
             <div id="screen2-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] text-[13.46px] md:text-[19.66px] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
               <!-- <div class="step-progress w-[32px] h-[32px] bg-[#013911] rounded-full"></div> -->
+              2
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[39.2px] md:h-[9px] rounded-xl"></div>
             <div id="screen3-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] text-[13.46px] md:text-[19.66px] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
+              3
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[39.2px] md:h-[9px] rounded-xl"></div>
             <div id="screen4-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] text-[13.46px] md:text-[19.66px] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
+              4
             </div>
+            <div class="bg-[#013911] h-1 w-6 md:w-[39.2px] md:h-[9px] rounded-xl"></div>
             <div id="screen5-step"
-              class="step flex justify-center items-center w-[35px] h-[35px] bg-white border-4 border-[#013911] rounded-full">
+              class="step text-[#013911] text-[13.46px] md:text-[19.66px] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
+              5
             </div>
           </div>
         </section>
         <section id="screens">
           <div id="screen1" class="question flex flex-col justify-center items-center">
-            <p class="text-[#013911] font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Were you <span class="font-bold">self-employed in 2020 and/or 2021? </span> ( E.g. 1099 independent
-              contractors,
-              freelancers, sole proprietors, gig-workers or single-member LLCs, etc? ) <a class="text-[#3D82F6]">Unsure?
-                Click here.</a>
+            <p class="text-[#013911] font-bold text-[26px] md:text-[36px] text-center font-normal mx-3 px-3 mt-8 flex flex-col w-full items-center">
+              <span class="md:mb-6">Were you <span class="font-bold text-[26px] md:text-[36px]">self-employed in 2020 and/or 2021? </span></span> 
+              <span class="text-[18px] md:text-[24px] md:w-[709px] text-center">( E.g. 1099 independent
+              contractors, freelancers, sole proprietors, gig-workers or single-member LLCs, etc? )</span> 
+              <a class="text-[#3D82F6] text-[18px] md:text-[24px]">Click here for examples.</a>
             </p>
-            <div class="options flex gap-[10px] w-full justify-center items-center flex-col mt-24 mb-24">
+            <div class="options flex gap-[10px] h-[72px] w-[358px] md:w-[372px] justify-center items-center flex-col mt-24 mb-24">
               <button
-                class="border w-64 bg-gradient-to-r from-[#003510] to-[#018D1E] text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
+                class="border border-2 border-[#7C7C7C] text-[20px] md:text-[28px] w-full hover:bg-[#013911] hover:text-white text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
                 onclick="onNextButtonClick('screen1','screen2')">Yes</button>
               <button
-                class="border w-64 border-[#7C7C7C] border-2 text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">No</button>
+                class="border text-[20px] md:text-[28px] w-full border-[#7C7C7C] border-2 text-[#7C7C7C] hover:bg-[#013911] hover:text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen1','screen2')">No</button>
             </div>
 
             <!-- <button
@@ -196,20 +213,21 @@
 
           </div>
           <div id="screen2" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[#013911] font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Were you <span class="font-bold">affected by the COVID-19</span> pandemic in 2020 and/or 2021? <a
-                class="">Click here for examples.</a>
+            <p class="text-[#013911] w-[390px] md:w-[648px] font-bold text-[26px] md:text-[36px] text-center font-normal mt-8 flex flex-col w-full items-center">
+              <span class="md:mb-6">Were you <span class="font-bold text-[26px] md:text-[36px]">affected by the COVID-19</span> pandemic in 2020 and/or 2021?</span> 
+              <a class="text-[#3D82F6] text-[18px] md:text-[24px]">Click here for examples.</a>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-24">
+            <div class="options flex gap-[10px] h-[72px] w-[358px] md:w-[372px] justify-center items-center flex-col mt-24 mb-24">
               <button
-                class="border w-64 bg-gradient-to-r from-[#003510] to-[#018D1E] text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen2','screen3')">Yes</button>
+                class="border border-2 border-[#7C7C7C] text-[20px] md:text-[28px] w-full hover:bg-[#013911] hover:text-white text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
+                onclick="onNextButtonClick('screen2','screen3')">Yes</button>
               <button
-                class="border w-64 border-[#7C7C7C] border-2 text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">No</button>
+                class="border text-[20px] md:text-[28px] w-full border-[#7C7C7C] border-2 text-[#7C7C7C] hover:bg-[#013911] hover:text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen2','screen3')">No</button>
             </div>
 
             <div id="screen-btn" class="flex gap-[10px] w-full justify-evenly flex-row">
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
+                class="border w-[160px] h-[56px] md:w-[600px] md:h-[80px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
                 onclick="onBackButtonClick('screen2','screen1')">Back</button>
               <!-- <button
                 class="border w-40 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] my-24 font-bold"
@@ -218,20 +236,21 @@
 
           </div>
           <div id="screen3" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[#013911] font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Did you have <span class="font-bold">net positive earnings</span> in any of the years <span
-                class="font-bold">2019, 2020, or 2021?</span> Explain further.
+            <p class="text-[#013911] w-[390px] md:w-[680px] font-bold text-[26px] md:text-[36px] text-center font-normal mx-3 px-3 mt-8 flex flex-col w-full items-center">
+              <span class="md:mb-6">Did you have <span class="font-bold text-[26px] md:text-[36px]">net positive earnings</span>in any of the years <span class="font-bold text-[26px] md:text-[36px]">2019, 2020, or 2021? </span></span> 
+              <a class="text-[#3D82F6] text-[18px] md:text-[24px]">Click here for examples.</a>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-24">
+            <div class="options flex gap-[10px] h-[72px] w-[358px] md:w-[372px] justify-center items-center flex-col mt-24 mb-24">
               <button
-                class="border w-64 bg-gradient-to-r from-[#003510] to-[#018D1E] text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen3','screen4')">Yes</button>
+                class="border border-2 border-[#7C7C7C] text-[20px] md:text-[28px] w-full hover:bg-[#013911] hover:text-white text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
+                onclick="onNextButtonClick('screen3','screen4')">Yes</button>
               <button
-                class="border w-64 border-[#7C7C7C] border-2 text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">No</button>
+                class="border text-[20px] md:text-[28px] w-full border-[#7C7C7C] border-2 text-[#7C7C7C] hover:bg-[#013911] hover:text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen3','screen4')">No</button>
             </div>
 
             <div id="screen-btn" class="flex gap-[10px] w-full justify-evenly flex-row">
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
+                class="border w-[160px] h-[56px] md:w-[600px] md:h-[80px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
                 onclick="onBackButtonClick('screen3','screen2')">Back</button>
               <!-- <button
                 class="border w-40 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] my-24 font-bold"
@@ -240,19 +259,21 @@
 
           </div>
           <div id="screen4" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[#013911] font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Did you also file as a <span class="font-bold">W-2 employee in 2020, or 2021?</span> Click here for help.
+            <p class="text-[#013911] w-[390px] md:w-[648px] font-bold text-[26px] md:text-[36px] text-center font-normal mx-3 px-3 mt-8 flex flex-col w-full items-center">
+              <span class="md:mb-6">Did you also file as a <span class="font-bold text-[26px] md:text-[36px]"> W-2 employee in 2020, or 2021? </span></span> 
+              <a class="text-[#3D82F6] text-[18px] md:text-[24px]">Click here for examples.</a>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-24">
+            <div class="options flex gap-[10px] h-[72px] w-[358px] md:w-[372px] justify-center items-center flex-col mt-24 mb-24">
               <button
-                class="border w-64 bg-gradient-to-r from-[#003510] to-[#018D1E] text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen4','screen5')">Yes</button>
+                class="border border-2 border-[#7C7C7C] text-[20px] md:text-[28px] w-full hover:bg-[#013911] hover:text-white text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
+                onclick="onNextButtonClick('screen4','screen5')">Yes</button>
               <button
-                class="border w-64 border-[#7C7C7C] border-2 text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">No</button>
+                class="border text-[20px] md:text-[28px] w-full border-[#7C7C7C] border-2 text-[#7C7C7C] hover:bg-[#013911] hover:text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" onclick="onNextButtonClick('screen4','screen5')">No</button>
             </div>
 
             <div id="screen-btn" class="flex gap-[10px] w-full justify-evenly flex-row">
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
+                class="border w-[160px] h-[56px] md:w-[600px] md:h-[80px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24"
                 onclick="onBackButtonClick('screen4','screen3')">Back</button>
               <!-- <button
                 class="border w-40 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] my-24 font-bold"
@@ -261,23 +282,24 @@
 
           </div>
           <div id="screen5" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[#013911] font-bold text-2xl text-center font-normal mx-3 px-3 mt-8">
-              Did your employer file <span class="font-bold">sick or family leave</span> time for you in <span
-                class="font-bold">2020 or 2021?</span> Unsure? Click here.
+            <p class="text-[#013911] w-[390px] md:w-[771px] font-bold text-[26px] md:text-[36px] text-center font-normal mx-3 px-3 mt-8 flex flex-col w-full items-center">
+              <span class="md:mb-6">Did your employer file <span class="font-bold text-[26px] md:text-[36px]">sick or family leave</span> time for you in <span class="font-bold text-[26px] md:text-[36px]">2020 or 2021?</span> Unsure?</span> 
+              <a class="text-[#3D82F6] text-[18px] md:text-[24px]">Click here for examples.</a>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-24">
+            <div class="options flex gap-[10px] h-[72px] w-[358px] md:w-[372px] justify-center items-center flex-col mt-24 mb-24">
               <button
-                class="border w-64 bg-gradient-to-r from-[#003510] to-[#018D1E] text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">Yes</button>
+                class="border border-2 border-[#7C7C7C] text-[20px] md:text-[28px] w-full hover:bg-[#013911] hover:text-white text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]"
+               >Yes</button>
               <button
-                class="border w-64 border-[#7C7C7C] border-2 text-[#7C7C7C] rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]">No</button>
+                class="border text-[20px] md:text-[28px] w-full border-[#7C7C7C] border-2 text-[#7C7C7C] hover:bg-[#013911] hover:text-white rounded-[3.57px] pt-[15px] pr-[73px] pb-[15px] pl-[73px]" >No</button>
             </div>
 
             <div id="screen-btn" class="flex gap-[10px] w-full items-center flex-row justify-center md:flex-col">
               <button
-                class="border w-40 md:w-96 text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24 md:my-0 md:mt-24"
+                class="border w-[160px] h-[56px] md:w-[600px] md:h-[80px] text-[#013911] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 my-24 md:my-0 md:mt-24"
                 onclick="onBackButtonClick('screen5','screen4')">Back</button>
               <button onclick="submitHandling()"
-                class="border w-40 md:w-96 bg-[#013911] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] my-24 font-bold md:my-0 md:mb-24">Submit</button>
+                class="border w-[160px] h-[56px] md:w-[600px] md:h-[80px] bg-gradient-to-br from-[#003510] to-[#018D1E] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] my-24 font-bold md:my-0 md:mb-24">Submit</button>
             </div>
 
           </div>
@@ -285,7 +307,7 @@
       </div>
       <div id="questionaire-result" class="w-full flex justify-center items-center flex-col hidden">
         <div>
-          <svg width="286" height="286" viewBox="0 0 286 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-[286px] h-[286px] md:w-[px] md:h-[px]" width="286" height="286" viewBox="0 0 286 286" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M31.239 195.734L34.0567 191.067L30.4771 188.696L26.7797 190.928C26.7797 190.928 21.773 189.713 21.4172 189.871C21.0614 190.028 17.1993 194.553 17.1993 194.553L15.2156 199.34L17.376 201.817L15.3815 203.112C15.3815 203.112 22.8552 207.385 24.0084 207.523C25.1609 207.66 26.7746 206.641 26.7746 206.641L32.224 207.798L36.0204 204.593L34.3238 196.389L31.239 195.734Z"
               fill="#FAFAFA" />
@@ -920,19 +942,21 @@
           </svg>
         </div>
         <h2
-          class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center my-3 py-3 mx-3 px-3">
+          class="text-[20px] font-bold text-[#013911] text-center my-3 py-3 w-[390px]">
           Unfortunately, we are unable to help you at this time.
         </h2>
-        <p class="py-2 text-[#333333] text-2xl mx-3 px-3 md:mx-32 font-semibold">
+        <p class="py-2 text-[#333333] text-[20px] w-[390px] md:mx-32 font-semibold">
           Sorry, but we can’t help you with your application at this time. It looks like you did not meet the following
           requirements:
         </p>
-        <ul class="text-xl pr-14 pl-16 mx-2 my-4 list-disc">
-          <li>Self-employed in 2020 or 2021...</li>
-          <li>Affected by COVID in 2020 or 2021...</li>
-          <li>Had net positive earnings in 2020 or 2021...</li>
-          <li>Did not already claim sick or family leave credit...</li>
-        </ul>
+        <div class="text-[20px] text-[#333333] w-[386px] mx-2 pl-6 my-4">
+          <ul class="list-disc">
+            <li>Self-employed in 2020 or 2021...</li>
+            <li>Affected by COVID in 2020 or 2021...</li>
+            <li>Had net positive earnings in 2020 or 2021...</li>
+            <li>Did not already claim sick or family leave credit...</li>
+          </ul>
+        </div>
         <button onclick="startAgain()"
           class="bg-[#013911] py-[5px] px-[10px] w-[240px] h-[50px] text-[#DEECE3] font-bold rounded-[5px] mt-4 mb-8">Start
           Again</button>
@@ -1101,24 +1125,24 @@
 
       var stepCompleteDiv = document.createElement('div');
       stepCompleteDiv.className = 'step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0';
-      stepCompleteDiv.innerHTML = '<svg width="53" height="29" viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+      stepCompleteDiv.innerHTML = '<svg class="md:w-[67px] md:h-[33px] w-[45px] h-[22px]" viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745" stroke-linecap="round" stroke-linejoin="round" /></svg>';
       document.getElementById(currentScreenId + '-step').innerHTML = '';
       document.getElementById(currentScreenId + '-step').appendChild(stepCompleteDiv);
 
       document.getElementById(nextScreenId + '-step').innerHTML = '';
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
     }
     function onBackButtonClick(currentScreenId, nextScreenId) {
       document.getElementById(currentScreenId).classList.add('hidden');
       document.getElementById(nextScreenId).classList.remove('hidden');
 
-      document.getElementById(currentScreenId + '-step').innerHTML = '';
+      document.getElementById(currentScreenId + '-step').innerHTML = currentScreenId[currentScreenId.length-1];
 
       document.getElementById(nextScreenId + '-step').innerHTML = '';
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
     }
     function submitHandling() {
@@ -1136,7 +1160,7 @@
         step.innerHTML = '';
       });
       var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] bg-[#013911] rounded-full'
+      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
       document.getElementById('screen1-step').appendChild(stepProgressDiv);
     }
   </script>
