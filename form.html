@@ -21,9 +21,9 @@
 
 <body>
   <header
-    class="navbar flex flex-row justify-between items-center bg-base-100 shadow-[8px_8px_35px_-8px_rgba(0,0,0,0.15)] mb-5 pl-8">
+    class="navbar flex flex-row justify-between items-center bg-base-100 shadow-[8px_8px_35px_-8px_rgba(0,0,0,0.15)] mb-5 pl-8 md:h-[94px]">
     <div class="flex-1 md:ml-10">
-      <svg class="w-[111px] h-[44px] my-4 md:my-0 md:w-[181px] md:h-[114px]" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="w-[111px] h-[44px] my-4 md:my-0 md:w-[181px] md:h-[62px]" viewBox="0 0 101 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_2811)">
           <path
             d="M21.7168 24.04H23.4187C24.602 24.04 25.3805 24.4551 25.3805 25.5463C25.3805 26.6375 24.602 27.1239 23.4187 27.1239H22.1358V29.7407H21.7158V24.0411L21.7168 24.04ZM23.311 26.7874C24.3654 26.7874 24.9505 26.3866 24.9505 25.5463C24.9505 24.706 24.3654 24.3766 23.311 24.3766H22.1368V26.7874H23.311ZM23.7239 26.8904L25.4933 29.7397H25.0099L23.3251 27.0056L23.7239 26.8894V26.8904Z"
@@ -91,8 +91,8 @@
       </svg>
     </div>
 
-    <div class="flex-none md:flex md:flex-row md:gap-[20px] mr-4 md:justify-center md:items-center md:my-4">
-      <a class="font-normal text-base text-[#006838] hidden md:block">
+    <div class="flex-none md:flex  md:flex-row md:gap-[24px] mr-4 md:justify-center md:items-center md:my-0">
+      <!-- <a class="font-normal text-base text-[#006838] hidden md:block">
         About
       </a>
       <a class="font-normal text-base text-[#006838] hidden md:block">
@@ -106,11 +106,11 @@
       </a>
       <a class="font-normal text-base text-[#006838] hidden md:block">
         Affiliates
-      </a>
-      <a class="font-normal text-base text-[#006838] hidden md:block">
+      </a> -->
+      <a class="font-normal text-[16] text-[#006838] hidden md:block">
         Log In
       </a>
-      <button class="bg-[#013911] text-white py-[16px] px-[24px] rounded-[5px] hidden md:block">
+      <button class="bg-[#013911] text-white text-[16px] w-[137px] h-[43px] rounded-[5px] hidden md:block">
         Get Started
       </button>
       <button class="md:hidden">
@@ -204,13 +204,13 @@
             class="border w-[200px] md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border md:w-96 rounded-[5px] pt-[15px] pr-[73px] pb-[15px] pl-[73px] text-[#DEECE3] mb-14 font-bold"
             onclick="onNextButtonClick('screen1','screen2')">Next</button> 
 
-            <div id="warning" class="flex flex-row w-[90%] justify-center items-center gap-2 mb-14">
+            <div id="warning" class="flex flex-row w-[90%] md:w-full justify-center items-center gap-[14px] mb-14">
                 <div>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M38.4672 25.5501L25.0006 4.28341C23.8672 2.65008 21.9839 1.66675 20.0006 1.66675C18.0172 1.66675 16.1339 2.63341 14.9506 4.33341L1.55057 25.5168C-0.149432 27.9501 -0.466099 30.8668 0.717234 33.1168C1.8839 35.3668 4.3339 36.6501 7.40057 36.6501H32.6006C35.6839 36.6501 38.1172 35.3668 39.2839 33.1168C40.4506 30.8668 40.1339 27.9668 38.4672 25.5501ZM18.3339 11.6667C18.3339 10.7501 19.0839 10.0001 20.0006 10.0001C20.9172 10.0001 21.6672 10.7501 21.6672 11.6667V21.6667C21.6672 22.5834 20.9172 23.3334 20.0006 23.3334C19.0839 23.3334 18.3339 22.5834 18.3339 21.6667V11.6667ZM20.0006 31.6668C18.6172 31.6668 17.5006 30.5501 17.5006 29.1668C17.5006 27.7834 18.6172 26.6668 20.0006 26.6668C21.3839 26.6668 22.5006 27.7834 22.5006 29.1668C22.5006 30.5501 21.3839 31.6668 20.0006 31.6668Z" fill="#EDA61C"/>
                         </svg>                    
                 </div>
-                <p class="text-base">This information will be used to verify your identity and claim your tax return.</p>
+                <p class="text-[20px]">This information will be used to verify your identity and claim your tax return.</p>
             </div>
 
           </div>
@@ -233,13 +233,13 @@
                   class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
                   onclick="onBackButtonClick('screen2','screen1')">Back</button>
             </div>
-            <div id="warning" class="flex flex-row w-[90%] justify-center items-center gap-2 mb-14">
+            <div id="warning" class="flex flex-row w-[90%] md:w-full justify-center items-center gap-[14px] mb-14">
                 <div>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M38.4672 25.5501L25.0006 4.28341C23.8672 2.65008 21.9839 1.66675 20.0006 1.66675C18.0172 1.66675 16.1339 2.63341 14.9506 4.33341L1.55057 25.5168C-0.149432 27.9501 -0.466099 30.8668 0.717234 33.1168C1.8839 35.3668 4.3339 36.6501 7.40057 36.6501H32.6006C35.6839 36.6501 38.1172 35.3668 39.2839 33.1168C40.4506 30.8668 40.1339 27.9668 38.4672 25.5501ZM18.3339 11.6667C18.3339 10.7501 19.0839 10.0001 20.0006 10.0001C20.9172 10.0001 21.6672 10.7501 21.6672 11.6667V21.6667C21.6672 22.5834 20.9172 23.3334 20.0006 23.3334C19.0839 23.3334 18.3339 22.5834 18.3339 21.6667V11.6667ZM20.0006 31.6668C18.6172 31.6668 17.5006 30.5501 17.5006 29.1668C17.5006 27.7834 18.6172 26.6668 20.0006 26.6668C21.3839 26.6668 22.5006 27.7834 22.5006 29.1668C22.5006 30.5501 21.3839 31.6668 20.0006 31.6668Z" fill="#EDA61C"/>
                         </svg>                    
                 </div>
-                <p class="text-base">This information will be used to verify your identity and claim your tax return.</p>
+                <p class="text-[20px]">This information will be used to verify your identity and claim your tax return.</p>
             </div>
           </div>
           <div id="screen3" class="question flex flex-col justify-center items-center hidden">
@@ -262,8 +262,8 @@
                 onclick="onBackButtonClick('screen3','screen2')">Back</button>
             </div>
 
-            <div id="warning" class="flex flex-row w-[90%] md:w-[816px] md:text-[20px] justify-center items-center gap-2 mb-14">
-                <p class="text-base">By clicking “get your estimate”, you agree to receive marketing communications via email and SMS from SETC Tax Return, LLC regarding promotions, offers, product updates, and other relevant information. You understand that message and data rates may apply for SMS messages. You may opt-out at any time by replying "STOP" to any SMS message received or by clicking the unsubscribe link in any email. Your consent is not a condition of purchase. For more information, please refer to our Privacy Policy.
+            <div id="warning" class="flex flex-row w-[90%] md:w-[816px] md:text-[20px] justify-center items-center gap-[14px] mb-14">
+                <p class="text-[20px]">By clicking “get your estimate”, you agree to receive marketing communications via email and SMS from SETC Tax Return, LLC regarding promotions, offers, product updates, and other relevant information. You understand that message and data rates may apply for SMS messages. You may opt-out at any time by replying "STOP" to any SMS message received or by clicking the unsubscribe link in any email. Your consent is not a condition of purchase. For more information, please refer to our Privacy Policy.
                     By clicking “get your estimate” you agree to <span class="text-[#3D82F6]">Terms of use</span> & <span class="text-[#3D82F6]">Privacy Policy.</span></p>
             </div>
 
