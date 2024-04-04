@@ -156,29 +156,30 @@
         <section class="step-container w-full flex justify-center">
           <div class="steps flex justify-between items-center w-fit gap-1 w-[80%] md:w-[468px] h-2 mx-5 md:my-10 my-10">
             <div id="screen1-step"
-              class="step flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full m-0 p-0">
+              class="step flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] rounded-full font-medium text-[13.46px] md:text-[19.96px] m-0 p-0 !bg-[#013911] text-white border-[#013911]">
               <!-- <div class="step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0"><svg width="83" height="41"
               viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div> -->
-              <div class="step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full"></div>
+              <!-- <div class="step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full"></div> -->
+              1
             </div>
-            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
+            <div id="edge-1" class="bg-gray-200 h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen2-step"
-              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] md:border-[3px] bg-white border-2 border-[#013911] rounded-full">
+              class="step flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] md:border-[3px] border-2 text-[13.46px] md:text-[19.96px] font-medium rounded-full border-gray-200 bg-white text-[#013911]">
               <!-- <div class="step-progress w-[32px] h-[32px] bg-[#013911] rounded-full"></div> -->
               2
             </div>
-            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
+            <div id="edge-2" class="bg-gray-200 h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen3-step"
-              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full">
+              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-gray-200 font-medium text-[13.46px] md:text-[19.96px] rounded-full">
               3
             </div>
-            <div class="bg-[#013911] h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
+            <div id="edge-3" class="bg-gray-200 h-1 w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
             <div id="screen4-step"
-              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-[#013911] rounded-full">
+              class="step text-[#013911] flex justify-center items-center w-[25px] h-[25px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-gray-200 font-medium text-[13.46px] md:text-[19.96px] rounded-full">
               4
             </div> 
           </div>
@@ -201,7 +202,7 @@
             </div>
 
             <button
-            class="border w-[200px] md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border md:w-96 rounded-[5px] pt-[15px] pr-[73px] pb-[15px] pl-[73px] text-[#DEECE3] mb-14 font-bold"
+            class="border-[1.5px] border-[#013911] w-[260px] h-[64px] md:w-[600px] md:h-[80px] md:text-[28px] hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-[#DEECE3]  text-[#013911] md:w-96 rounded-[5px] pt-[15px] pr-[73px] pb-[15px] pl-[73px] mb-14 font-bold"
             onclick="onNextButtonClick('screen1','screen2')">Next</button> 
 
             <div id="warning" class="flex flex-row w-[90%] md:w-full justify-center items-center gap-[14px] mb-14">
@@ -227,10 +228,10 @@
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border md:w-[600px] rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border md:w-[600px] rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
                 onclick="onNextButtonClick('screen2','screen3')">Next</button>
                 <button
-                  class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
+                  class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
                   onclick="onBackButtonClick('screen2','screen1')">Back</button>
             </div>
             <div id="warning" class="flex flex-row w-[90%] md:w-full justify-center items-center gap-[14px] mb-14">
@@ -253,7 +254,7 @@
                     <div class="mt-1 relative rounded-md shadow-sm">
                       <input type="tel" id="phone" class="md:h-[80px] focus:ring-[#016819] focus:border-[#016819] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-[15px]" placeholder="">
                       <span id="formatted-placeholder" class="absolute inset-y-0 left-0 flex items-center pl-4">
-                          <span class="text-[#014012] text-[15px]">+1 </span>
+                          <span class="text-[#014012] text-[15px] mr-1">+1 </span>
                           <span class="text-[#01401252] text-[15px]">(858) 555-1234</span>
                       </span>
                       <script>
@@ -272,10 +273,10 @@
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                  class="border w-40 md:w-[600px] md:h-[80px] text-[18px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
-                  onclick="onNextButtonClick('screen3','screen4')">Get Your Estimate</button>
+                  class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] text-[18px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                  onclick="onNextButtonClick('screen3','screen4')">Next</button>
               <button
-                class="border w-40 md:w-[600px] md:h-[80px] text-[18px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
+                class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] text-[18px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
                 onclick="onBackButtonClick('screen3','screen2')">Back</button>
             </div>
 
@@ -302,10 +303,10 @@
 
             <div id="screen-btn" class="flex w-full justify-evenly flex-col gap-[20px] mt-4 mb-14 items-center">
                 <button
-                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
+                class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] md:text-[28px] bg-gradient-to-r from-[#003510] to-[#018D1E] border rounded-[5px] py-[10px] px-[10px] text-[#DEECE3] font-bold"
                 >Create Account</button>
               <button
-                class="border w-40 md:w-[600px] md:h-[80px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
+                class="border w-[260px] h-[64px] md:w-[600px] md:h-[80px] md:text-[28px] font-bold border rounded-[5px] py-[10px] px-[10px] border-[#013911] border-2 bg-gradient-to-r from-[#003510] to-[#018D1E] text-transparent bg-clip-text"
                 onclick="onBackButtonClick('screen4','screen3')">Back</button>
             </div>
 
@@ -474,30 +475,41 @@
 
   <script>
     function onNextButtonClick(currentScreenId, nextScreenId) {
+      //screen switching
       document.getElementById(currentScreenId).classList.add('hidden');
       document.getElementById(nextScreenId).classList.remove('hidden');
 
-      var stepCompleteDiv = document.createElement('div');
-      stepCompleteDiv.className = 'step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0';
-      stepCompleteDiv.innerHTML = '<svg class="w-[46px] h-[22px] md:w-[67px] md:h-[33px]" width="46" height="22" viewBox="0 0 83 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.2598 16.2129L17.6372 24.8355L13.7178 20.9162" stroke="white" stroke-width="3.52745" stroke-linecap="round" stroke-linejoin="round" /></svg>';
-      document.getElementById(currentScreenId + '-step').innerHTML = '';
-      document.getElementById(currentScreenId + '-step').appendChild(stepCompleteDiv);
+      //changing step edge color
+      document.getElementById('edge-'+currentScreenId[currentScreenId.length - 1]).classList.remove('bg-gray-200');
+      document.getElementById('edge-'+currentScreenId[currentScreenId.length - 1]).classList.add('bg-[#013911]');
 
-      document.getElementById(nextScreenId + '-step').innerHTML = '';
-      var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
-      document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
+      //next step node background , border and text color update
+      document.getElementById(nextScreenId+'-step').classList.remove('border-gray-200'); //border-gray-200 bg-white text-[#013911]
+      document.getElementById(nextScreenId+'-step').classList.remove('bg-white');
+      document.getElementById(nextScreenId+'-step').classList.remove('text-[#013911]');
+      document.getElementById(nextScreenId+'-step').classList.add('!bg-[#013911]'); //!bg-[#013911] text-white border-[#013911]
+      document.getElementById(nextScreenId+'-step').classList.add('text-white');
+      document.getElementById(nextScreenId+'-step').classList.add('border-[#013911]');
+
     }
     function onBackButtonClick(currentScreenId, nextScreenId) {
+      //changing step edge color
+      document.getElementById('edge-'+nextScreenId[nextScreenId.length - 1]).classList.add('bg-gray-200');
+      document.getElementById('edge-'+nextScreenId[nextScreenId.length - 1]).classList.remove('bg-[#013911]');
+
+      //screen switching
       document.getElementById(currentScreenId).classList.add('hidden');
       document.getElementById(nextScreenId).classList.remove('hidden');
 
-      document.getElementById(currentScreenId + '-step').innerHTML = currentScreenId[currentScreenId.length - 1] ;
+       //next step node background , border and text color update
+      document.getElementById(currentScreenId+'-step').classList.add('border-gray-200'); //border-gray-200 bg-white text-[#013911]
+      document.getElementById(currentScreenId+'-step').classList.add('bg-white');
+      document.getElementById(currentScreenId+'-step').classList.add('text-[#013911]');
+      document.getElementById(currentScreenId+'-step').classList.remove('!bg-[#013911]'); //!bg-[#013911] text-white border-[#013911]
+      document.getElementById(currentScreenId+'-step').classList.remove('text-white');
+      document.getElementById(currentScreenId+'-step').classList.remove('border-[#013911]');
 
-      document.getElementById(nextScreenId + '-step').innerHTML = '';
-      var stepProgressDiv = document.createElement('div');
-      stepProgressDiv.className = 'step-progress w-[21px] h-[21px] md:w-[30px] md:h-[30px] bg-[#013911] rounded-full'
-      document.getElementById(nextScreenId + '-step').appendChild(stepProgressDiv);
+      
     }
     function submitHandling() {
       document.getElementById('questinaire').classList.add('hidden');
