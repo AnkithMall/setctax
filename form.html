@@ -51,11 +51,11 @@
     <div class="flex flex-col md:w-full">
       <div id="" class="flex flex-col items-center">
         <section class="flex flex-col justify-center items-center md:mb-[20.29px]">
-          <h2 class="text-[24px] md:text-[56px] font-bold text-transparent md:leading-[50px] bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center py-0 md:mt-4 md:w-[70%]">
+          <h2 class="text-[24px] md:text-[40px] font-bold text-transparent md:leading-[38px] bg-clip-text bg-gradient-to-r from-[#003510] to-[#018D1E] text-center py-0 md:mt-4 md:w-[70%]">
             Congrats! You Have Been Pre-Qualified.</h2>
         </section>
         <section class="step-container w-full flex justify-center">
-          <div class="steps flex justify-between items-center w-fit gap-1 w-[80%] md:w-[468px] h-2 mx-5 md:my-10 my-4">
+          <div class="steps flex justify-between items-center w-fit gap-1 w-[80%] md:w-[468px] h-2 mx-5 md:my-2 my-4">
             <div id="screen1-step"
               class="step flex justify-center items-center w-[27px] h-[27px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] rounded-full font-medium text-[13.46px] md:text-[19.96px] m-0 p-0 !bg-[#013911] text-white border-[#013911]">
               <!-- <div class="step-complete w-full h-full bg-[#013911] rounded-full m-0 p-0"><svg width="83" height="41"
@@ -87,19 +87,19 @@
         </section>
 
         <section id="screens">
-          <div id="screen1" class="question flex flex-col justify-center items-center">
-            <p class="text-[20px] md:text-[32px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-4">
+          <div id="screen1" class="input-field flex flex-col justify-center items-center">
+            <p class="text-[20px] md:text-[26px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-6 md:leading-[24px] leading-[20px]">
               Fill out your information below to know your <span class="font-bold">exact refund amount.</span>
             </p>
-            <div class="options flex gap-[10px] w-full justify-center items-center flex-col mt-8 md:mt-14 mb-4">
-              <div class="mb-6 w-[90%] md:w-[648px]">
-                <label for="firstname" class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012]">First
+            <div class="options flex gap-[10px] w-full justify-center items-center flex-col mt-1 min-[361px]:mt-4 md:mt-6 mb-4">
+              <div class="mb-0 md:mb-2 w-[90%] md:w-[648px]">
+                <label for="firstname" class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012]">First
                   Name</label>
                 <input type="text" id="firstname" placeholder="Enter Your First Name"
                   class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
               </div>
               <div class="mb-6 w-[90%] md:w-[648px]">
-                <label for="lastname" class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012]">Last
+                <label for="lastname" class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012]">Last
                   Name</label>
                 <input type="text" id="lastname" placeholder="Enter Your Last Name"
                   class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
@@ -123,14 +123,14 @@
             </div>
 
           </div>
-          <div id="screen2" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[20px] md:text-[32px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-4">
+          <div id="screen2" class="input-field flex flex-col justify-center items-center hidden">
+            <p class="text-[20px] md:text-[26px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-6 md:leading-[24px] leading-[20px]">
               Fill out your information below to know your <span class="font-semibold">exact refund amount.</span>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-              <div class="mb-6 w-[90%] md:w-[648px]">
+            <div class="options flex gap-[10px] w-full items-center flex-col mt-1 min-[361px]:mt-4 md:mt-6 mb-4">
+              <div class="mb-0 md:mb-2 w-[90%] md:w-[648px]">
                 <label for="email"
-                  class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">E-mail</label>
+                  class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">E-mail</label>
                 <input type="email" id="email" placeholder="Enter Your Email Address"
                   class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
               </div>
@@ -156,14 +156,14 @@
               </p>
             </div>
           </div>
-          <div id="screen3" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[20px] md:text-[32px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-4">
+          <div id="screen3" class="input-field flex flex-col justify-center items-center hidden">
+            <p class="text-[20px] md:text-[26px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-6 md:leading-[24px] leading-[20px]">
               Fill out your information below to know your <span class="font-semibold">exact refund amount.</span>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-              <div class="mb-6 w-[90%] md:w-[648px]">
+            <div class="options flex gap-[10px] w-full items-center flex-col mt-1 min-[361px]:mt-4 md:mt-6 mb-4">
+              <div class="mb-0 md:mb-2 w-[90%] md:w-[648px]">
                 <label for="phone"
-                  class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Phone
+                  class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Phone
                   Number</label>
                 <!-- <input type="tel" id="phone" placeholder="+1 (858) 555-1234" class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]"> -->
                 <div class="mt-1 relative rounded-md shadow-sm">
@@ -210,22 +210,22 @@
             </div>
 
           </div>
-          <div id="screen4" class="question flex flex-col justify-center items-center hidden">
-            <p class="text-[20px] md:text-[32px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-4">
+          <div id="screen4" class="input-field flex flex-col justify-center items-center hidden">
+            <p class="text-[20px] md:text-[26px] md:w-[648px] text-center font-normal mx-3 px-3 mt-2 md:mt-6 md:leading-[24px] leading-[20px]">
               Enter Your password to create an account. Here you can check the <span class="font-semibold">exact refund
                 amount.</span>
             </p>
-            <div class="options flex gap-[10px] w-full items-center flex-col mt-8 md:mt-14 mb-4">
-              <div class="mb-6 w-[90%] md:w-[648px]">
+            <div class="options flex gap-[10px] w-full items-center flex-col mt-1 min-[361px]:mt-4 md:mt-6 mb-4">
+              <div class="mb-0 md:mb-2 w-[90%] md:w-[648px]">
                 <label for="password"
-                  class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Create
+                  class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Create
                   Password</label>
                 <input type="password" id="password" placeholder="Enter Password"
                   class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
               </div>
               <div class="mb-6 w-[90%] md:w-[648px]">
                 <label for="confirm_password"
-                  class="block mb-2 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Confirm
+                  class="block mb-0 md:mb-1 text-sm md:text-[16px] font-medium text-[#014012] dark:text-white">Confirm
                   Password</label>
                 <input type="password" id="confirm_password" placeholder="Re-Enter Password"
                   class="md:h-[80px] placeholder:text-[#014012] block w-full p-4 text-[#014012] border border-[#016819] rounded-lg bg-[#F5FFF7] text-base focus:ring-[#016819] focus:border-[#016819]">
@@ -289,72 +289,7 @@
       <div class="flex flex-col md:flex-row items-center justify-center sm:justify-between">
         <div class="md:w-[50%] w-full flex flex-col items-center md:items-start gap-[15px]">
           <div>
-            <svg width="229" height="76" viewBox="0 0 229 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_238_1140)">
-                <path
-                  d="M49.2396 53.8247H53.0984C55.7813 53.8247 57.5463 54.754 57.5463 57.1972C57.5463 59.6403 55.7813 60.7294 53.0984 60.7294H50.1894V66.5884H49.2373V53.827L49.2396 53.8247ZM52.8541 59.9759C55.2447 59.9759 56.5713 59.0786 56.5713 57.1972C56.5713 55.3157 55.2447 54.5782 52.8541 54.5782H50.1917V59.9759H52.8541ZM53.7902 60.2066L57.802 66.5861H56.706L52.886 60.4646L53.7902 60.2043V60.2066Z"
-                  fill="white" />
-                <path
-                  d="M74.0477 53.8245H82.0438V54.5939H74.993V59.4254H80.9273V60.1949H74.993V65.821H82.2471V66.5905H74.0454V53.829L74.0477 53.8245Z"
-                  fill="white" />
-                <path d="M101.724 54.5917H97.02V53.8223H107.373V54.5917H102.669V66.586H101.724V54.5917Z" fill="white" />
-                <path
-                  d="M122.465 61.8115V53.8245H123.417V61.7087C123.417 64.9853 125 66.0059 126.808 66.0059C128.617 66.0059 130.24 64.9876 130.24 61.7087V53.8245H131.14V61.8115C131.14 65.6794 129.073 66.8188 126.808 66.8188C124.543 66.8188 122.465 65.6771 122.465 61.8115Z"
-                  fill="white" />
-                <path
-                  d="M147.659 53.8245H151.518C154.201 53.8245 155.966 54.7538 155.966 57.1969C155.966 59.6401 154.201 60.7292 151.518 60.7292H148.609V66.5882H147.657V53.8267L147.659 53.8245ZM151.274 59.9757C153.664 59.9757 154.991 59.0784 154.991 57.1969C154.991 55.3155 153.664 54.578 151.274 54.578H148.611V59.9757H151.274ZM152.21 60.2063L156.222 66.5859H155.126L151.306 60.4643L152.21 60.204V60.2063Z"
-                  fill="white" />
-                <path
-                  d="M171.75 53.8245H172.755L178.016 62.8481L179.457 65.3689H179.498C179.466 64.1382 179.377 62.9029 179.377 61.6654V53.8245H180.27V66.5859H179.265L174.004 57.5622L172.563 55.0415H172.522C172.554 56.2836 172.643 57.4412 172.643 58.6742V66.5859H171.75V53.8245Z"
-                  fill="white" />
-                <path
-                  d="M42.8008 20.0131V25.4908C42.8008 25.8767 43.1137 26.1872 43.4973 26.1872H59.195C59.5786 26.1872 59.8914 26.5 59.8914 26.8836C59.8937 27.8609 59.9028 28.8085 59.9005 29.7378C51.0299 28.571 42.3396 27.6645 34.3252 26.9658V12.7225C34.3252 12.3367 34.638 12.0261 35.0216 12.0261H59.8731C60.259 12.0261 60.5696 12.3389 60.5696 12.7225V18.6158C60.5696 19.0016 60.2567 19.3122 59.8731 19.3122H43.495C43.1091 19.3122 42.7986 19.625 42.7986 20.0086L42.8008 20.0131Z"
-                  fill="white" />
-                <path
-                  d="M28.5963 23.3081H21.1093C20.8787 23.3081 20.6595 23.1688 20.5933 22.9496C20.5933 22.9496 20.5933 22.9473 20.5933 22.945C19.4242 18.9698 16.1249 17.3349 12.193 18.8122C11.0308 19.2506 10.3161 20.0498 10.1837 21.3627C10.0467 22.719 10.4577 23.8378 11.7089 24.3287C12.9328 24.8082 14.1977 25.1872 15.4581 25.5754C9.91197 25.242 5.17639 25.0228 1.56191 24.879C0.630316 20.7645 2.29485 15.9992 5.83855 13.7867C9.59916 11.4371 13.7228 11.1563 17.9606 11.6472C20.9335 11.992 23.6552 13.04 25.8289 15.1909C27.9159 17.255 28.9639 19.7598 29.1489 22.7167C29.1694 23.0364 28.9182 23.3081 28.5986 23.3081H28.5963Z"
-                  fill="white" />
-                <path
-                  d="M126.929 37.5079C126.589 40.2548 125.29 42.8669 123.363 44.947C120.778 43.7916 118.02 42.7025 115.118 41.6727C116.488 40.885 117.476 39.5926 118.129 37.8984C118.458 37.0421 118.867 36.6768 119.83 36.7065C121.94 36.7727 124.05 36.7408 126.235 36.7339C126.651 36.7339 126.979 37.097 126.929 37.5079Z"
-                  fill="white" />
-                <path
-                  d="M125.616 24.6437C123.459 24.5843 121.299 24.6208 119.136 24.6254C118.871 24.6254 118.629 24.4747 118.513 24.2372C118.422 24.0523 118.342 23.881 118.292 23.7029C117.417 20.7963 115.481 19.0929 112.462 18.7459C109.126 18.3623 106.176 19.271 104.553 22.3512C101.792 27.5914 101.767 33.012 104.281 38.2796C101.002 37.3663 97.6116 36.5169 94.141 35.72C93.0587 30.7538 93.6089 25.7648 95.8649 20.8579C100.968 9.75875 114.647 9.69939 121.141 14.1313C124.329 16.305 126.174 19.3555 126.854 23.1504C127.053 24.2601 126.788 24.6756 125.616 24.6437Z"
-                  fill="white" />
-                <path
-                  d="M93.584 12.757V18.6045C93.584 18.9904 93.2711 19.3055 92.883 19.3055H82.7656V33.357C79.9069 32.8158 77.0208 32.3089 74.1233 31.834V19.4493H63.9032C63.515 19.4493 63.2 19.1342 63.2 18.7461V12.7524C63.2 12.3711 63.5105 12.0605 63.8918 12.0605H92.8875C93.2734 12.0605 93.584 12.3734 93.584 12.757Z"
-                  fill="white" />
-                <path
-                  d="M216.732 10.2634C216.643 12.323 216.556 14.3665 216.469 16.4352C215.965 16.1064 215.476 15.7868 214.978 15.4625C214.076 16.8439 213.165 18.2162 212.247 19.5839H212.289L193.013 48.8148C192.842 49.0751 192.549 49.2327 192.239 49.2327C191.583 49.2327 190.917 49.2395 190.232 49.2418C189.547 49.2441 189.165 48.5134 189.522 47.954C190.017 47.1731 190.471 46.463 190.928 45.7575C193.07 42.4581 195.18 39.1336 197.388 35.8776C197.995 34.9825 197.958 34.3729 197.392 33.4824C194.821 29.4478 192.33 25.3607 189.816 21.2895L189.807 21.2758C189.387 20.5908 189.878 19.7095 190.682 19.7095C193.269 19.7026 195.728 19.6912 198.185 19.7551C198.557 19.7666 199.009 20.3305 199.255 20.737C200.655 23.0408 202.004 25.3744 203.514 27.9408C205.126 25.4155 206.446 23.26 208.08 20.979C208.083 20.9744 208.085 20.9722 208.09 20.9676C209.612 18.6295 211.14 16.2914 212.668 13.9487C212.17 13.6245 211.683 13.3094 211.179 12.9783C213.04 12.0695 214.876 11.1722 216.732 10.2634Z"
-                  fill="white" />
-                <path d="M17.3808 7.69019H11.8894V13.1815H17.3808V7.69019Z" fill="white" />
-                <path
-                  d="M61.6288 42.675C61.3319 44.7368 61.0534 46.6913 60.7702 48.6618C60.72 49.0089 60.4232 49.2646 60.0738 49.2646H35.0282C34.64 49.2646 34.325 48.9495 34.325 48.5614V26.9658C42.3394 27.6645 51.0296 28.571 59.9003 29.7378C59.898 30.763 59.882 31.7676 59.8272 32.7677C59.8113 33.0668 58.9778 33.5532 58.5189 33.5577C53.8518 33.6171 49.1847 33.592 44.5154 33.5897H43.4719C43.0837 33.5897 42.7686 33.9048 42.7686 34.293V41.168C42.7686 41.5562 43.0837 41.8713 43.4719 41.8713H60.9324C61.3593 41.8713 61.6881 42.2526 61.6288 42.675Z"
-                  fill="white" />
-                <path
-                  d="M30.0757 38.444C29.9204 42.9719 27.7786 46.3831 23.5865 48.1732C18.3098 50.4246 12.8549 50.5068 7.53025 48.3445C2.93395 46.479 0.680321 42.8349 0.00674499 38.0764C-0.0526211 37.6586 0.273892 37.2841 0.694021 37.2841H7.97321C8.28603 37.2841 8.55774 37.4942 8.64222 37.7933C9.16053 39.6588 9.97796 41.3576 11.9918 42.1156C14.2135 42.949 16.4831 43.0198 18.7664 42.3234C20.2232 41.8804 21.0885 40.9192 21.2507 39.419C21.4242 37.8344 20.9401 36.4028 19.4423 35.736C17.6385 34.9346 15.7068 34.4277 13.8436 33.7587C11.2954 32.8431 8.64907 32.1147 6.24018 30.916C3.62579 29.6122 2.11881 27.3631 1.5594 24.8789C5.15561 25.0228 9.86151 25.2397 15.3711 25.5707C15.4282 25.573 15.483 25.5844 15.5378 25.6004C16.1931 25.8014 16.8462 26.0069 17.4946 26.2283C19.7597 27.0115 22.0841 27.6874 24.2395 28.7103C28.2855 30.6306 30.2286 33.9962 30.0757 38.444Z"
-                  fill="white" />
-                <path
-                  d="M123.363 44.9471C121.753 46.6892 119.703 48.0547 117.406 48.815C113.417 50.137 109.364 50.1758 105.343 48.9977C100.799 47.6665 97.4996 44.769 95.6616 40.4535C94.9903 38.8803 94.4834 37.3025 94.1409 35.7202C97.6115 36.5171 101.002 37.3665 104.281 38.2798C104.352 38.4305 104.427 38.5789 104.503 38.7296C105.998 41.6865 108.784 42.7414 112.033 42.5473C113.222 42.4742 114.245 42.1774 115.115 41.6728H115.118C118.02 42.7026 120.778 43.7917 123.363 44.9471Z"
-                  fill="white" />
-                <path
-                  d="M82.7652 33.357V48.5318C82.7652 48.9177 82.4524 49.2305 82.0665 49.2305H74.8193C74.4334 49.2305 74.1206 48.9177 74.1206 48.5318V31.834C77.0181 32.3089 79.9042 32.8158 82.7629 33.357H82.7652Z"
-                  fill="white" />
-                <path
-                  d="M178.363 30.2379C178.767 30.2493 179.103 29.9228 179.103 29.5164C179.096 27.3267 178.411 26.4019 176.79 26.1028C173.682 25.5274 172.454 26.169 171.513 29.0551C171.417 29.352 171.141 29.5552 170.828 29.5552H163.958C163.572 29.5552 163.248 29.2515 163.238 28.8656C163.129 24.7009 165.965 20.9905 170.305 19.7415C173.543 18.8099 176.84 18.7757 180.101 19.5383C185.076 20.7005 187.537 23.7487 187.745 28.9638C187.85 31.6193 187.786 34.2816 187.789 36.9417C187.793 40.7388 187.789 44.5337 187.789 48.5021C187.789 48.8994 187.469 49.2236 187.072 49.2236C185.028 49.2305 182.758 49.2579 180.491 49.1848C180.092 49.1711 179.703 48.84 179.212 48.509C178.998 48.3651 178.717 48.356 178.495 48.4884C175.76 50.1027 172.267 50.2694 168.714 49.3835C164.759 48.3971 162.213 45.173 161.891 41.1019C161.565 36.9897 163.375 33.4756 167.145 31.9458C169.412 31.0256 171.945 30.674 174.39 30.2904C175.666 30.0918 176.993 30.1991 178.361 30.2356L178.363 30.2379ZM179.053 36.8755C179.025 36.4668 178.653 36.1699 178.247 36.2179C176.463 36.4302 174.666 36.5809 172.92 36.9645C171.244 37.3321 170.502 38.6633 170.684 40.2959C170.86 41.8668 171.84 42.7847 173.548 42.9879C177.196 43.4172 179.327 41.1384 179.053 36.8755Z"
-                  fill="white" />
-                <path
-                  d="M144.148 18.0358H135.998C135.108 18.0358 134.386 17.3143 134.386 16.4238V11.7658C134.386 10.8936 135.085 10.1698 135.957 10.1675C135.962 10.1675 135.969 10.1675 135.973 10.1675C145.461 10.1629 154.95 10.2018 164.437 10.1264C165.983 10.115 166.291 10.6013 166.277 12.0444C166.264 13.5833 166.277 15.1177 166.268 16.6704C166.261 17.7024 165.94 18.0746 164.885 18.0564C162.101 18.013 159.316 18.029 156.416 18.0358C155.525 18.0358 154.806 18.7596 154.806 19.6478V47.5133C154.806 48.4038 154.085 49.1254 153.194 49.1254H147.376C146.486 49.1254 145.764 48.4038 145.764 47.5133V19.6478C145.764 18.7573 145.043 18.0358 144.152 18.0358H144.148Z"
-                  fill="white" />
-                <path
-                  d="M229 0C228.879 2.24906 228.758 4.47529 228.637 6.7312C228.098 6.37957 227.573 6.03707 227.041 5.69001C224.783 9.15379 221.159 14.5607 218.159 19.0793C215.012 24.2214 211.864 28.5825 208.649 33.882C211.713 38.7432 214.782 43.6089 218.01 48.7327C218.145 48.945 217.99 49.2213 217.741 49.2236C214.597 49.2259 211.658 49.2533 208.724 49.1756C208.366 49.1642 207.939 48.5363 207.692 48.1116C206.281 45.6845 204.913 43.2322 203.409 40.5721C201.92 43.1842 200.495 45.5749 199.189 48.0317C198.693 48.9633 198.109 49.2989 197.061 49.2715C196.351 49.2533 195.917 49.2441 195.383 49.2396C194.983 49.235 194.748 48.7898 194.972 48.4587L214.309 19.7963C214.309 19.7963 214.316 19.7849 214.32 19.7803C217.487 14.926 221.917 8.13315 224.566 4.07343C224.034 3.72408 223.515 3.38615 222.974 3.03452C224.993 2.01845 226.984 1.01607 229 0.00228331V0Z"
-                  fill="white" />
-                <path d="M17.7868 48.333H12.2954V53.8244H17.7868V48.333Z" fill="white" />
-              </g>
-              <defs>
-                <clipPath id="clip0_238_1140">
-                  <rect width="229" height="75.3789" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+            <img width="229" height="76" src="./assets/setctax-icon-footer.svg"/>
           </div>
           <p class="text-white text-xl w-[85%] md:w-[75%] text-center md:text-left">2598 E. Sunrise Blvd., Suite 2104,
             Fort Lauderdale, Florida, 33304</p>
