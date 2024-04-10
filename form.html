@@ -490,7 +490,8 @@
             document.getElementById("email").classList.remove("placeholder:text-[#F03E3E]");
             return true;
         }
-      }else if (currentScreenId === 'screen3') {
+      }
+      else if (currentScreenId === 'screen3') {
         var phone = document.getElementById("phone").value.trim();
 
         if (phone === "") {
@@ -508,6 +509,7 @@
 
       return true;
     }
+    
     function onNextButtonClick(currentScreenId, nextScreenId) {
 
       if(validateForm(currentScreenId) === true){//screen switching

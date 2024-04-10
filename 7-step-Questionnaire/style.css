@@ -1,0 +1,22 @@
+ /* Custom style for the range slider thumb */
+ #labels-range-input::-webkit-slider-thumb {
+    background-color: white; /* Change thumb color to green */
+    border: 1px solid var(--gray-200, #E5E7EB);
+    box-shadow: 0px 1px 2px 0px #00000014;
+    height: 22px; /* Set height */
+    width: 22px; /* Set width */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor to pointer */
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none;
+}
+
+#labels-range-input::-moz-range-thumb {
+    background-color: white; /* Change thumb color to green for Firefox */
+    border: 1px solid var(--gray-200, #E5E7EB);
+    box-shadow: 0px 1px 2px 0px #00000014;
+    height: 22px; /* Set height */
+    width: 22px; /* Set width */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor to pointer */
+}
