@@ -15,6 +15,20 @@
             margin: 0;
             padding: 0;
         }
+
+        input[type=checkbox]::before {
+          position: absolute;
+          content: '\2713';
+          width: 12px;
+          height: 12px;
+          color: #ffff;
+          transform: scale(0);
+          transition: 0.3s all ease-in-out;
+        }
+        input[type=checkbox]:checked::before {
+          transform: scale(.8) translateY(-4px);
+        }
+        
         
       
     </style>
@@ -79,17 +93,17 @@
                   4
                 </div>
                 <div id="edge-4" class="bg-gray-200 h-1 w-[14.94px] min-[360px]:w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
-                <div id="screen4-step"
+                <div id="screen5-step"
                   class="step text-[#013911] flex justify-center items-center w-[23.32px] h-[23.32px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-gray-200 font-medium text-[13.46px] md:text-[19.96px] rounded-full">
                   5
                 </div>
                 <div id="edge-5" class="bg-gray-200 h-1 w-[14.94px] min-[360px]:w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
-                <div id="screen4-step"
+                <div id="screen6-step"
                   class="step text-[#013911] flex justify-center items-center w-[23.32px] h-[23.32px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-gray-200 font-medium text-[13.46px] md:text-[19.96px] rounded-full">
                   6
                 </div>
                 <div id="edge-6" class="bg-gray-200 h-1 w-[14.94px] min-[360px]:w-6 md:w-[74px] md:h-[9px] rounded-xl"></div>
-                <div id="screen4-step"
+                <div id="screen7-step"
                   class="step text-[#013911] flex justify-center items-center w-[23.32px] h-[23.32px] md:w-[40px] md:h-[40px] bg-white border-2 md:border-[3px] border-gray-200 font-medium text-[13.46px] md:text-[19.96px] rounded-full">
                   7
                 </div>
@@ -97,15 +111,15 @@
             </section>
     
             <section id="screens" class="w-full">
-                <div  id="screen1" class="step1 flex flex-col justify-center items-center hidden">
-                    <section id="sc-1-step-1" class="flex flex-col w-[95%] min-[361px]:w-[358px] gap-[88px] hidden">
+                <div  id="screen1" class="step1 flex flex-col justify-center items-center">
+                    <section id="sc-1-step-1" class="flex flex-col w-[95%] min-[361px]:w-[358px] gap-[88px]">
                         <div class="questionnaire flex flex-col w-full justify-center items-center">
                             <div class="w-full mb-[24px] flex flex-col w-full gap-[12px] justify-center items-center">
                                 <iframe class="w-full h-[243px]" src="../assets/video-placeholder.svg"></iframe>
                                 <h4 class="w-full text-[18px] font-semibold	text-[#101828]">Answer the questionnaire to move to the next step</h4>
                                 <p class="w-full text-[16px] text-[#475467]">Fill out the questionnaire so we can learn more about how Covid affected you and your work during 2020 and 2021. Once this is complete, we can move on to get you your return!</p>
                             </div>
-                            <button class="w-full h-[36px] text-[#FFFFFF] bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Complete Questionnaire</button>
+                            <button onclick="toggleScreen('sc-1-step-1','sc-1-step-2',false)" class="w-full h-[36px] text-[#FFFFFF] bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Complete Questionnaire</button>
                         </div>
                         <div class="talk-to-us flex flex-col w-full justify-center items-center border border-[1px] border-[#E5E7EB] rounded-[8px] shadow-md mb-[40px]">
                             <div class="flex flex-col gap-[16px] justify-center items-center">
@@ -139,7 +153,7 @@
                             </div>                          
                         </div>
                     </section>
-                    <section id="sc-1-step-2" class="flex flex-col w-[95%] min-[361px]:w-[358px] justify-center items-center gap-[5px] mb-[125px]">
+                    <section id="sc-1-step-2" class="flex flex-col w-[95%] min-[361px]:w-[358px] justify-center items-center gap-[5px] mb-[125px] hidden">
                         <h3 class="text-[20px] text-center bg-clip-text text-transparent bg-gradient-to-r from-[#003510] to-[#018D1E] font-semibold">Estimated Return Amount</h3>
                         <div class="w-full rounded-[12px] border-[1px] pt-[4px] pb-[24px] shadow-lg flex flex-col justify-center items-center gap-[10px] mt-[5px]">
                           <div class="w-[85%] min-[361px]:w-[334px] rounded-[6px] p-[12px] bg-[#F9FAFB] text-[14px] text-[#344054] font-semibold">Adjust the scale to accurately reflect your 2019-2021 data</div>
@@ -182,7 +196,7 @@
                             </div>
                             <p class="text-[14px] font-normal	text-[#475467] w-[85%] min-[361px]:w-[318px] text-center mb-[16px]">Please remember this is only an estimate. For an accurate SETC calculation, <span class="text-[#39B54A]">please continue.</span></p>
                           </div>
-                          <button class="w-[85%] py-[10px] px-[16px] min-[361px]:w-[326px] text-[16px] text-white shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Next</button>
+                          <button onclick="toggleScreen('screen1','screen2',true)" class="w-[85%] py-[10px] px-[16px] min-[361px]:w-[326px] text-[16px] text-white shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Next</button>
 
                         </div>
                     </section>
@@ -218,7 +232,7 @@
                           <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between April 1, 2020 and December 31, 2020</span></p>
                           <div class="flex flex-col gap-[16px]">
                               <div id="no-days-checkbox" class="mx-[12px] flex gap-[8px]">
-                                <input type="checkbox"/>
+                                <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                                 <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                               </div>
                               <div id="cal-input" class="flex flex-col px-[12px]">
@@ -254,7 +268,7 @@
                         <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between January 1, 2021 and March 31, 2021</span></p>
                         <div class="flex flex-col gap-[16px]">
                             <div class="mx-[12px] flex gap-[8px]">
-                              <input type="checkbox"/>
+                              <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                               <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                             </div>
                             <div class="flex flex-col px-[12px]">
@@ -271,7 +285,7 @@
                         <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between April 1, 2021 and September 30, 2021</span></p>
                         <div class="flex flex-col gap-[16px]">
                             <div class="mx-[12px] flex gap-[8px]">
-                              <input type="checkbox"/>
+                              <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                               <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                             </div>
                             <div class="flex flex-col px-[12px]">
@@ -286,7 +300,7 @@
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
                         <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button onclick="toggleScreen('screen2','screen3',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
@@ -322,7 +336,7 @@
                           <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between April 1, 2020 and December 31, 2020</span></p>
                           <div class="flex flex-col gap-[16px]">
                               <div id="no-days-checkbox" class="mx-[12px] flex gap-[8px]">
-                                <input type="checkbox"/>
+                                <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                                 <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                               </div>
                               <div id="cal-input" class="flex flex-col px-[12px]">
@@ -358,7 +372,7 @@
                         <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between January 1, 2021 and March 31, 2021</span></p>
                         <div class="flex flex-col gap-[16px]">
                             <div class="mx-[12px] flex gap-[8px]">
-                              <input type="checkbox"/>
+                              <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                               <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                             </div>
                             <div class="flex flex-col px-[12px]">
@@ -375,7 +389,7 @@
                         <p class="text-[16px] font-semibold px-[12px] w-fit">Select up to 10 days <span class="font-medium">between April 1, 2021 and September 30, 2021</span></p>
                         <div class="flex flex-col gap-[16px]">
                             <div class="mx-[12px] flex gap-[8px]">
-                              <input type="checkbox"/>
+                              <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
                               <p class="text-[#475467] text-[14px] font-medium">No Days</p>
                             </div>
                             <div class="flex flex-col px-[12px]">
@@ -390,7 +404,7 @@
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
                         <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button onclick="toggleScreen('screen3','screen4',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
@@ -415,8 +429,8 @@
                         </div>
                       </dialog>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0">Yes</button>
-                        <button class="w-[160.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs">No</button>
+                        <button class="w-[160.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E]">Yes</button>
+                        <button class="w-[160.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E]">No</button>
                       </div>
                       <div class="flex flex-col mx-[12px] bg-[#F9FAFB] rounded-[6px] p-[12px]">
                         <div class="flex justify-start items-center gap-[8px] important-warning ">
@@ -454,12 +468,12 @@
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
                         <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button onclick="toggleScreen('screen4','screen5',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                 </div>
-                <div id="screen5" class="flex flex-col items-center justify-center w-full " >
+                <div id="screen5" class="flex flex-col items-center justify-center w-full hidden" >
                   <section  class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[355px] gap-[20px]">
                     <h3 class="text-[20px] font-semibold text-[#101828] w-full">Address Information</h3>
                     <div class="flex flex-col gap-[24px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pt-[24px] pb-[32px] rounded-[12px] shadow-lg">
@@ -520,7 +534,157 @@
                       
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
                         <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button onclick="toggleScreen('screen5','screen6',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="screen6" class="flex flex-col items-center justify-center w-full hidden">
+                  <section id="sc-6-step-1" class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] gap-[20px]">
+                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Taxpayer Information</h3>
+                    <div class="flex flex-col gap-[16px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pb-[32px] rounded-[12px] shadow-lg">
+                        <div class="text-center w-full bg-[#F9FAFB] py-[8px] text-[#344054] font-semibold">Taxpayer Information</div>
+                        <div class="flex flex-col gap-[16px]">
+                          <div class="mx-[12px]">
+                            <label for="ssn" class="block mb-2 text-[16px] font-semibold text-[#344054]">What is your SSN <span class="text-[#39B54A]">Why do we need it?</span></label>
+                            <input type="text" id="ssn" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Social Security Number" required />
+                          </div>
+                          <div class="mx-[12px] mb-[16px]">
+                            <label for="occupation" class="block mb-2 text-[16px] font-semibold text-[#344054]">What is your occupation?</label>
+                            <input type="text" id="occupation" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Occupation" required />
+                          </div>
+                        </div>
+                        <div class="flex flex-col gap-[24px] rounded-[6px] bg-[#F9FAFB] items-around justify-center">
+                          <div id="occupation-checkbox" class="mx-[12px] flex gap-[4px]">
+                            <input type="checkbox" class="appearance-none w-[16px] h-[16px] border-[1px] rounded-[4px] border-[#013911] checked:bg-[#013911]"/>
+                            <p class="text-[#475467] text-[12px] font-medium">Check this if your occupation changed in 2021</p>
+                          </div>
+                          <div class="mx-[12px]">
+                            <label for="past-occupation" class="block mb-2 text-[16px] font-semibold text-[#344054]">What was your occupation in 2021?</span></label>
+                            <input type="text" id="past-occupation" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Occupation" required />
+                          </div>
+                        </div>
+                        <div class="flex flex-col mx-[12px] bg-[#F9FAFB] rounded-[6px] p-[12px]">
+                          <div class="flex justify-start items-start gap-[8px] important-warning ">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_448_19553)">
+                              <path d="M8.00004 10.6654V7.9987M8.00004 5.33203H8.00671M14.6667 7.9987C14.6667 11.6806 11.6819 14.6654 8.00004 14.6654C4.31814 14.6654 1.33337 11.6806 1.33337 7.9987C1.33337 4.3168 4.31814 1.33203 8.00004 1.33203C11.6819 1.33203 14.6667 4.3168 14.6667 7.9987Z" stroke="#39B54A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_448_19553">
+                              <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                              </defs>
+                              </svg>
+                            <p class="text-[12px] text-[#475467]">Please ensure your occupation matches the occupation used when filing 2020 and 2021 tax return. </p>                            
+                          </div>
+                        </div>
+                      
+                      <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
+                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen6','screen7',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+                <div id="screen7" class="flex flex-col items-center justify-center w-full hidden">
+                  <section class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] gap-[20px]">
+                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Taxpayer Information</h3>
+                    <div class="flex flex-col gap-[16px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pb-[32px] rounded-[12px] shadow-lg">
+                      <div class="text-center w-full bg-[#F9FAFB] py-[8px] text-[#344054] font-semibold">Taxpayer Information</div>
+                      <div id="spouse-info">
+                        <div class="mx-[12px] flex flex-col gap-[20px] mb-[8px]">
+                          <p class="text-[16px] font-medium">Did you <span class="font-semibold"> file jointly </span>with a spouse in <span class="font-semibold">2020, or 2021?</span></p>
+                          <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
+                            <button onclick="toggle('Yes','with-spouse')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">Yes</button>
+                            <button onclick="toggle('No','with-spouse')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">No</button>
+                          </div>
+                        </div>
+                        <div id="with-spouse" class="hidden">
+                          <div class="flex flex-col gap-[16px]">
+                            <div class="mx-[12px]">
+                              <label for="spouse-firstname" class="block mb-2 text-[16px] font-semibold text-[#344054]">Spouse’s Legal First Name</label>
+                              <input type="text" id="spouse-firstname" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="First Name" required />
+                            </div>
+                            <div class="mx-[12px] mb-[16px]">
+                              <label for="spouse-lastname" class="block mb-2 text-[16px] font-semibold text-[#344054]">Spouse’s Legal Last Name</label>
+                              <input type="text" id="spouse-lastname" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Last Name" required />
+                            </div>
+                          </div>
+                          <div class="flex flex-col gap-[16px]">
+                            <div class="mx-[12px]">
+                              <label for="spouse-occupation" class="block mb-2 text-[16px] font-semibold text-[#344054]">Spouse’s Occupation</label>
+                              <input type="text" id="occupation" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Occupation" required />
+                            </div>
+                            <div class="mx-[12px] mb-[16px]">
+                              <label for="spouse-ssn" class="block mb-2 text-[16px] font-semibold text-[#344054]">Spouse’s SSN <span class="text-[#39B54A]">Why do we need it?</span></label>
+                              <input type="text" id="ssn" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Social Security Number" required />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div id="dependents" class="flex flex-col gap-[24px] px-[12px]">
+                        <div class="mx-[12px] flex flex-col gap-[20px]">
+                          <p class="text-[16px] font-medium">Did you <span class="font-semibold"> claim a dependent</span> in <span class="font-semibold">2020, or 2021?</span></p>
+                          <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
+                            <button onclick="toggle('Yes','claim-dependent')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">Yes</button>
+                            <button onclick="toggle('No','claim-dependent')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">No</button>
+                          </div>
+                        </div>
+                        <div id="claim-dependent" class="flex flex-col gap-[24px] pb-[16px] hidden">
+                          <div id="dependent" class="flex flex-col gap-[24px] mx-[12px]">
+                            <div class="text-center w-full bg-[#F9FAFB] py-[8px] text-[#344054] font-semibold">Dependent 1</div>
+                            <div class="flex flex-col gap-[16px]">
+                              <div class="mx-[12px]">
+                                <label for="dependent-firstname" class="block mb-2 text-[16px] font-semibold text-[#344054]">Dependent’s Legal First Name</label>
+                                <input type="text" id="dependent-firstname" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="First Name" required />
+                              </div>
+                              <div class="mx-[12px] mb-[16px]">
+                                <label for="dependent-lastname" class="block mb-2 text-[16px] font-semibold text-[#344054]">Dependent’s Legal Last Name</label>
+                                <input type="text" id="dependent-lastname" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Last Name" required />
+                              </div>
+                            </div>
+                            <div class="mx-[12px] mb-[16px]">
+                              <label for="dependent-dob" class="block mb-2 text-[16px] font-semibold text-[#344054]">Dependent’s Date of Birth</label>
+                              <input type="date" id="dependent-dob" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Date of Birth" required />
+                            </div>
+                            <div class="flex flex-col gap-[16px]">
+                              <div class="mx-[12px]">
+                                <label for="dependent-relationship" class="block mb-2 text-[16px] font-semibold text-[#344054]">Dependent’s Relationship to you</label>
+                                <select id="dependent-relationship" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required >
+                                  <option selected>Select an option</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                              <div class="mx-[12px] mb-[16px]">
+                                <label for="dependent-ssn" class="block mb-2 text-[16px] font-semibold text-[#344054]">Dependent’s SSN <span class="text-[#39B54A]">Why do we need it?</span></label>
+                                <input type="text" id="dependent-ssn" class="bg-gray-50 border border-gray-300 text-[#344054] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Social Security Number" required />
+                              </div>
+                            </div>
+                            <div class="mx-[12px] flex flex-col gap-[20px]">
+                              <p class="text-[16px] font-semibold text-[#344054]">What Year(s) Did you Claim this Dependent (please select at least one)?</p>
+                              <div class="button-group flex flex-col min-[390px]:flex-row justify-between gap-[24px] items-center w-full">
+                                <button class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E]">2020</button>
+                                <button class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E]">2021</button>
+                              </div>
+                            </div>
+                          </div>
+                          <button id="add-dependent" class="flex flex-row justify-start items-center gap-[8px] text-[#39B54A] text-[16px] font-semibold mx-[12px]">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.0001 4.16797V15.8346M4.16675 10.0013H15.8334" stroke="#39B54A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Add Another Dependent                               
+                          </button>
+                        </div>
+                        <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
+                          <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                          <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        </div>
                       </div>
                     </div>
                   </section>
@@ -619,6 +783,41 @@
           </div>
         </div>
       </footer>
+      <script>
+        function toggle(val,elementId){
+          if(val === 'Yes'){
+            document.getElementById(elementId).classList.remove('hidden');
+          }
+          if(val === 'No'){
+            document.getElementById(elementId).classList.add('hidden');
+          }
+        }
+        function toggleScreen(currentScreen,nextScreen,isStepChange){
+          if(isStepChange === false){
+            document.getElementById(currentScreen).classList.add('hidden');
+            document.getElementById(nextScreen).classList.remove('hidden');
+          }
+          if(isStepChange === true){
+            
+            document.getElementById(currentScreen).classList.add('hidden');
+            document.getElementById(nextScreen).classList.remove('hidden');
+
+            //edges
+            document.getElementById('edge-'+currentScreen[currentScreen.length - 1]).classList.remove('bg-gray-200');
+            document.getElementById('edge-'+currentScreen[currentScreen.length - 1]).classList.add('bg-[#013911]');
+            
+            //next step node background , border and text color update
+            document.getElementById(nextScreen+'-step').classList.remove('border-gray-200'); //border-gray-200 bg-white text-[#013911]
+            document.getElementById(nextScreen+'-step').classList.remove('bg-white');
+            document.getElementById(nextScreen+'-step').classList.remove('text-[#013911]');
+            document.getElementById(nextScreen+'-step').classList.add('!bg-[#013911]'); //!bg-[#013911] text-white border-[#013911]
+            document.getElementById(nextScreen+'-step').classList.add('text-white');
+            document.getElementById(nextScreen+'-step').classList.add('border-[#013911]');
+
+          }
+        }
+       
+      </script>
       <script src="script.js"></script>
       <script>
         // Polyfill for <dialog> element for unsupported browsers
