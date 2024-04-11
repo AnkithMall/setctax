@@ -69,9 +69,9 @@
     </header>
     <content class="flex flex-col items-center justify-center">
         <div class="flex flex-col md:w-full">
-          <div id="" class="flex flex-col sm:flex-row sm:gap-[100px] items-start w-full">
-            <section id="stepper" class="step-container w-full flex justify-center sm:w-fit sm:mt-[40px] sm:ml-[70px]">
-              <div class="steps flex justify-between items-center gap-1 sm:gap-[8px] w-[95%] sm:flex-col sm:w-[168px] h-2 sm:h-fit sm:mx-5 sm:my-2 mt-2 mb-[33.74px]">
+          <div id="" class="flex flex-col sm:flex-row sm:gap-[0px] sm:justify-start items-start w-full">
+            <section id="stepper" class="step-container w-full flex justify-center sm:w-fit sm:mt-[40px] sm:ml-[66px] sm:items-start sm:justify-start">
+              <div class="steps flex justify-between items-center gap-1 sm:gap-[8px] w-[95%] sm:flex-col sm:w-[35.68px] h-2 sm:h-fit sm:mx-5 sm:my-2 mt-2 mb-[33.74px]">
                 <div id="screen1-step"
                   class="step flex justify-center items-center w-[23.32px] h-[23.32px] sm:w-[40px] sm:h-[40px] bg-white border-2 md:border-[3px] rounded-full font-medium text-[13.46px] md:text-[19.96px] m-0 p-0 !bg-[#013911] text-white border-[#013911]">
                   1
@@ -111,13 +111,13 @@
             </section>
     
             <section id="screens" class="w-full">
-                <div  id="screen1" class="step1 flex flex-col justify-center items-center">
-                    <section id="sc-1-step-1" class="flex flex-col w-[95%] min-[361px]:w-[358px] sm:w-[1000px] gap-[88px]">
+                <div  id="screen1" class="step1 sm:w-full flex flex-col justify-center items-center sm:justify-start sm:items-start sm:pl-[77.33px]">
+                    <section id="sc-1-step-1" class="flex flex-col w-[95%] min-[361px]:w-[358px] sm:w-[923px] gap-[48px]">
                         <div class="questionnaire flex flex-col w-full justify-center items-center">
-                            <div class="w-full mb-[24px] flex flex-col gap-[12px] justify-center items-center">
-                                <iframe class="w-full h-[410px]" src="../assets/video-placeholder.svg"></iframe>
-                                <h4 class="w-full text-[18px] font-semibold	text-[#101828]">Answer the questionnaire to move to the next step</h4>
-                                <p class="w-full text-[16px] text-[#475467]">Fill out the questionnaire so we can learn more about how Covid affected you and your work during 2020 and 2021. Once this is complete, we can move on to get you your return!</p>
+                            <div class="w-full mb-[10px] flex flex-col gap-[12px] justify-center items-start ">
+                                <iframe class="w-full h-[243px] sm:h-[410px] p-0" src="../assets/video-placeholder.svg"></iframe>
+                                <h4 class="w-full text-[18px] sm:text-[30px] font-semibold	text-[#101828]">Answer the questionnaire to move to the next step</h4>
+                                <p class="w-full text-[16px] sm:text-[20px] text-[#475467]">Fill out the questionnaire so we can learn more about how Covid affected you and your work during 2020 and 2021. Once this is complete, we can move on to get you your return!</p>
                             </div>
                             <button onclick="toggleScreen('sc-1-step-1','sc-1-step-2',false)" class="w-full h-[36px] text-[#FFFFFF] bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Complete Questionnaire</button>
                         </div>
@@ -153,13 +153,13 @@
                             </div>                          
                         </div>
                     </section>
-                    <section id="sc-1-step-2" class="flex flex-col w-[95%] min-[361px]:w-[358px] justify-center items-center gap-[5px] mb-[125px] hidden">
-                        <h3 class="text-[20px] text-center bg-clip-text text-transparent bg-gradient-to-r from-[#003510] to-[#018D1E] font-semibold">Estimated Return Amount</h3>
+                    <section id="sc-1-step-2" class="flex flex-col w-[95%] min-[361px]:w-[358px] sm:w-[923px] justify-center items-center gap-[5px] mb-[125px] hidden">
+                        <h3 class="text-[20px] text-center sm:text-left sm:w-full sm:text-[30px] bg-clip-text text-transparent bg-gradient-to-r from-[#003510] to-[#018D1E] font-semibold">Estimated Return Amount</h3>
                         <div class="w-full rounded-[12px] border-[1px] pt-[4px] pb-[24px] shadow-lg flex flex-col justify-center items-center gap-[10px] mt-[5px]">
-                          <div class="w-[85%] min-[361px]:w-[334px] rounded-[6px] p-[12px] bg-[#F9FAFB] text-[14px] text-[#344054] font-semibold">Adjust the scale to accurately reflect your 2019-2021 data</div>
-                          <div class="w-[85%] min-[361px]:w-[334px] border-[#EAECF0] border-[1px] rounded-[12px] shadow-sm flex flex-col items-center justify-center">
-                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] px-[12px] mb-[10px]">Average Annual Net Income</h3>
-                            <div class="slider1 w-[85%] min-[361px]:w-[328px] px-[12px]">
+                          <div class="w-[85%] min-[361px]:w-[334px] sm:w-[760px] rounded-[6px] p-[12px] bg-[#F9FAFB] text-[14px] text-[#344054] font-semibold">Adjust the scale to accurately reflect your 2019-2021 data</div>
+                          <div class="w-[85%] min-[361px]:w-[334px] sm:w-[760px] border-[#EAECF0] border-[1px] rounded-[12px] shadow-sm flex flex-col items-center justify-center">
+                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px] mb-[10px]">Average Annual Net Income</h3>
+                            <div class="slider1 w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px]">
                               <div class="relative mb-[4px]">
                                 <label for="labels-range-input" class="sr-only">Labels range</label>
                                 <input id="labels-range-input" type="range" value="1000" min="0" max="132500"
@@ -168,42 +168,42 @@
                                 <span class="text-[12px] text-[#333333] font-medium absolute end-0 -bottom-6">$132,500+</span>
                               </div>
                             </div>
-                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] px-[12px] mb-[10px]">Work Days missed due to Covid</h3>
-                            <div class="slider2 w-[85%] min-[361px]:w-[328px] px-[12px]">
+                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px] mb-[10px]">Work Days missed due to Covid</h3>
+                            <div class="slider2 w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px]">
                               <div class="relative mb-[4px]">
                                 <label for="labels-range-input" class="sr-only">Labels range</label>
-                                <input id="labels-range-input" type="range" value="1000" min="0" max="132500"
+                                <input id="labels-range-input" type="range" value="10" min="0" max="20"
                                   class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
-                                <span class="text-[12px] text-[#333333] font-medium absolute start-0 -bottom-6">$0</span>
-                                <span class="text-[12px] text-[#333333] font-medium absolute end-0 -bottom-6">$132,500+</span>
+                                <span class="text-[12px] text-[#333333] font-medium absolute start-0 -bottom-6">0</span>
+                                <span class="text-[12px] text-[#333333] font-medium absolute end-0 -bottom-6">20+</span>
                               </div>
                             </div>
-                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] px-[12px] mb-[10px]">Work Days missed caring for your child</h3>
-                            <div class="slider3 w-[85%] min-[361px]:w-[328px] px-[12px]">
+                            <h3 class="text-[14px] text-[#344054] mt-[24px] font-semibold w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px] mb-[10px]">Work Days missed caring for your child</h3>
+                            <div class="slider3 w-[85%] min-[361px]:w-[328px] sm:w-[760px] px-[12px]">
                               <div class="relative mb-[28px]">
                                 <label for="labels-range-input" class="sr-only">Labels range</label>
-                                <input id="labels-range-input" type="range" value="1000" min="0" max="132500"
+                                <input id="labels-range-input" type="range" value="10" min="0" max="110"
                                   class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
-                                <span class="text-[12px] text-[#333333] font-medium absolute start-0 -bottom-6">$0</span>
-                                <span class="text-[12px] text-[#333333] font-medium absolute end-0 -bottom-6">$132,500+</span>
+                                <span class="text-[12px] text-[#333333] font-medium absolute start-0 -bottom-6">0</span>
+                                <span class="text-[12px] text-[#333333] font-medium absolute end-0 -bottom-6">110+</span>
                               </div>
                             </div>
                           </div>
                           <div class="flex flex-col items-center justify-center gap-[10px]">
-                            <div class="w-[168px] h-[60px] rounded-[6px] border-[1px] border[#D0D5DD] bg-[#F9FAFB] px-[32px] py-[12px] flex flex-col justify-center items-center">
+                            <div class="w-[168px] h-[60px] sm:w-[197px] sm:h-[86px]  rounded-[6px] border-[1px] border[#D0D5DD] bg-[#F9FAFB] px-[32px] py-[12px] flex flex-col justify-center items-center">
                               <span class="text-[#475467] text-[14px] ">Eligible For</span>
-                              <span class="text-[20px] font-semibold text-[#006838]">$32,220</span>
+                              <span class="text-[20px] sm:text-[30px] font-semibold text-[#006838]">$32,220</span>
                             </div>
                             <p class="text-[14px] font-normal	text-[#475467] w-[85%] min-[361px]:w-[318px] text-center mb-[16px]">Please remember this is only an estimate. For an accurate SETC calculation, <span class="text-[#39B54A]">please continue.</span></p>
                           </div>
-                          <button onclick="toggleScreen('screen1','screen2',true)" class="w-[85%] py-[10px] px-[16px] min-[361px]:w-[326px] text-[16px] text-white shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Next</button>
+                          <button onclick="toggleScreen('screen1','screen2',true)" class="w-[85%] py-[10px] px-[16px] min-[361px]:w-[326px] sm:w-[768px] text-[16px] text-white shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E] rounded-[8px]">Next</button>
 
                         </div>
                     </section>
                 </div>
                 <div id="screen2" class="flex flex-col items-center justify-center w-full hidden">
-                  <section id="sc-2-step-1" class="flex flex-col items-center justify-center w-[85%] min-[361px]:w-[355px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828]">Covid-19 Information (Personal)</h3>
+                  <section id="sc-2-step-1" class="flex flex-col items-center justify-center w-[85%] min-[361px]:w-[355px] sm:w-[923px] gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828]">Covid-19 Information (Personal)</h3>
                     <div class="flex flex-col gap-[24px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pt-[24px] pb-[32px] rounded-[12px] shadow-lg">
                       <p class="text-[16px] font-medium text-[#344054] w-fit px-[12px]">For 2020 and/or 2021 <span class="font-semibold">select the following dates you were affected by Covid causing you to be unable to work. <span id="open-modal" class="text-[#39B54A]">Not sure? Click here for examples.</span></span></p>
                       <dialog id="modal" class="modal backdrop:bg-[#13131333] mx-[11px] w-full rounded-[5px]">
@@ -299,15 +299,15 @@
                         </div>
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button onclick="toggleScreen('screen2','screen3',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen2','screen3',true)" class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                 </div>
                 <div id="screen3" class="flex flex-col items-center justify-center w-full hidden">
-                  <section id="sc-2-step-1" class="flex flex-col items-center justify-center w-[85%] min-[361px]:w-[355px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828]">Covid-19 Information (Someone Else)</h3>
+                  <section id="sc-2-step-1" class="flex flex-col items-center justify-center w-[85%] min-[361px]:w-[355px] sm:w-[923px] gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828]">Covid-19 Information (Someone Else)</h3>
                     <div class="flex flex-col gap-[24px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pt-[24px] pb-[32px] rounded-[12px] shadow-lg">
                       <p class="text-[16px] font-medium text-[#344054] w-fit px-[12px]">For 2020 and/or 2021 <span class="font-semibold">select the following dates you were unable to work because you were caring for someone affected by Covid <span id="sc-3-open-modal" class="text-[#39B54A]">Not sure? Click here for examples.</span></span></p>
                       <dialog id="sc-3-modal" class="modal backdrop:bg-[#13131333] mx-[11px] w-full rounded-[5px]">
@@ -403,15 +403,15 @@
                         </div>
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button onclick="toggleScreen('screen3','screen4',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen3','screen4',true)" class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                 </div>
                 <div id="screen4" class="flex flex-col items-center justify-center w-full hidden" >
-                  <section  class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[355px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Children Information</h3>
+                  <section  class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[355px] sm:w-[923px] gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828] w-full">Children Information</h3>
                     <div class="flex flex-col gap-[24px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pt-[24px] pb-[32px] rounded-[12px] shadow-lg">
                       <p class="text-[16px] font-medium text-[#344054] w-fit px-[12px]">In 2020 or 2021 <span class="font-semibold">, did you have a child enrolled in school requiring childcare? <span id="sc-4-open-modal" class="text-[#39B54A]">Not sure? Click here for examples.</span></span></p>
                       <dialog id="sc-4-modal" class="modal backdrop:bg-[#13131333] mx-[11px] w-full rounded-[5px]">
@@ -467,15 +467,15 @@
                         </div>
                       </div>
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button onclick="toggleScreen('screen4','screen5',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen4','screen5',true)" class="w-[160.5px] h-[44px] sm:w-[379px] sm:h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                 </div>
                 <div id="screen5" class="flex flex-col items-center justify-center w-full hidden" >
-                  <section  class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[355px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Address Information</h3>
+                  <section  class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[355px] sm:w-[923px]  gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828] w-full">Address Information</h3>
                     <div class="flex flex-col gap-[24px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pt-[24px] pb-[32px] rounded-[12px] shadow-lg">
                       <div class="flex flex-col mx-[12px] bg-[#F9FAFB] rounded-[6px] p-[12px]">
                         <div class="flex justify-start items-center gap-[8px] important-warning ">
@@ -533,15 +533,15 @@
                       </div>
                       
                       <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button onclick="toggleScreen('screen5','screen6',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <button class="w-[160.5px] h-[44px] sm:w-[379px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen5','screen6',true)" class="w-[160.5px] h-[44px] sm:w-[379px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                 </div>
                 <div id="screen6" class="flex flex-col items-center justify-center w-full hidden">
-                  <section id="sc-6-step-1" class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Taxpayer Information</h3>
+                  <section id="sc-6-step-1" class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] sm:w-[923px] gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828] w-full">Taxpayer Information</h3>
                     <div class="flex flex-col gap-[16px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pb-[32px] rounded-[12px] shadow-lg">
                         <div class="text-center w-full bg-[#F9FAFB] py-[8px] text-[#344054] font-semibold">Taxpayer Information</div>
                         <div class="flex flex-col gap-[16px]">
@@ -580,24 +580,24 @@
                           </div>
                         </div>
                       
-                      <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                        <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                        <button onclick="toggleScreen('screen6','screen7',true)" class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                      <div class="button-group flex flex-col min-[390px]:flex-row sm:gap-[6px] justify-around items-center w-full">
+                        <button class="w-[160.5px] sm:w-[379px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                        <button onclick="toggleScreen('screen6','screen7',true)" class="w-[160.5px] sm:w-[379px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                       </div>
                     </div>
                   </section>
                   
                 </div>
                 <div id="screen7" class="flex flex-col items-center justify-center w-full hidden">
-                  <section class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] gap-[20px]">
-                    <h3 class="text-[20px] font-semibold text-[#101828] w-full">Taxpayer Information</h3>
+                  <section class="flex flex-col items-center justify-center w-[95%] min-[361px]:w-[358px] sm:w-[923px] gap-[20px]">
+                    <h3 class="text-[20px] sm:text-[30px] sm:text-left sm:w-full font-semibold text-[#101828] w-full">Taxpayer Information</h3>
                     <div class="flex flex-col gap-[16px] border-[1px] border-[#EAECF0] bg-[#FCFCFD] pb-[32px] rounded-[12px] shadow-lg">
                       <div class="text-center w-full bg-[#F9FAFB] py-[8px] text-[#344054] font-semibold">Taxpayer Information</div>
                       <div id="spouse-info">
                         <div class="mx-[12px] flex flex-col gap-[20px] mb-[8px]">
                           <p class="text-[16px] font-medium">Did you <span class="font-semibold"> file jointly </span>with a spouse in <span class="font-semibold">2020, or 2021?</span></p>
                           <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                            <button onclick="toggle('Yes','with-spouse')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">Yes</button>
+                            <button onclick="toggle('Yes','with-spouse')" class="w-[140.5px]  h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs mb-4 min-[390px]:mb-0 hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">Yes</button>
                             <button onclick="toggle('No','with-spouse')" class="w-[140.5px] h-[44px] py-[8px] px-[12px] rounded-[8px] border-[1px] border-[#D0D5DD] shadow-xs hover:bg-gradient-to-r hover:from-[#003510] hover:to-[#018D1E] hover:text-white">No</button>
                           </div>
                         </div>
@@ -681,9 +681,9 @@
                               Add Another Dependent                               
                           </button>
                         </div>
-                        <div class="button-group flex flex-col min-[390px]:flex-row justify-around items-center w-full">
-                          <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
-                          <button class="w-[160.5px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
+                        <div class="button-group flex flex-col min-[390px]:flex-row sm:gap-[6px] justify-around items-center w-full">
+                          <button class="w-[160.5px] sm:w-[370px] h-[44px] py-[10px] px-[16px] text-[16px] mb-[24px] min-[390px]:mb-0 font-semibold text-[#006838] border-[1px] border-[#006838] rounded-[8px] shadow-xs">Previous</button>
+                          <button class="w-[160.5px] sm:w-[370px] h-[44px] py-[10px] px-[16px] text-[16px] font-semibold text-white border-[1px] border-[#006838] rounded-[8px] shadow-xs bg-gradient-to-r from-[#003510] to-[#018D1E]">Next</button>
                         </div>
                       </div>
                     </div>
