@@ -8,6 +8,7 @@ input[type=checkbox]::before {
   transform: scale(0);
   transition: 0.3s all ease-in-out;
 }
+
 input[type=checkbox]:checked::before {
   transform: scale(.8) translateY(-4px);
 }
@@ -34,3 +35,7 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%; /* Make it circular */
     cursor: pointer; /* Change cursor to pointer */
 }
+
+
+
+  
