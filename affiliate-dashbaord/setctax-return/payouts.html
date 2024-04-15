@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0 ">
+    <title>Compare Credit</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configaration script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        center: true,
+                        padding: {
+                            DEFAULT: '16px',
+                            // sm: '15px',
+                            // lg: '20px',
+                            // xl: '30px',
+                            '2xl': '18px',
+                        },
+                    },
+                    screens: {
+                        'xs': '480px',
+                        // => @media (min-width: 480px) { ... }
+                        'sm': '576px',
+                        // => @media (min-width: 640px) { ... }
+                        'md': '768px',
+                        // => @media (min-width: 768px) { ... }
+                        'lg': '992px',
+                        // => @media (min-width: 992px) { ... }
+                        'xl': '1200px',
+                        // => @media (min-width: 1200px) { ... }
+                        '2xl': '1400px',
+                        // => @media (min-width: 1200px) { ... }
+                    },
+
+                    colors: {
+                        bodyBg: '#DEECE3',
+                        greenColor: '#006838',
+                        lightGreen: '#018D1E',
+                        darkGreenColor: '#00250B',
+                        redColor: '#DB0000',
+                        darkGrayColor: '#333333',
+                        grayColor: '#696969',
+                        lightGray: '#BABABA',
+                        black: '#000000',
+                        white: '#ffffff',
+                        borderColor: '#7F7F7F',
+                        borderColor2: '#EAECF0',
+
+                        themeLightGreen: '#39B54A',
+                        hdrDrpColor: '#E0EDE7',
+                        themeGray: '#475467',
+                        themeGray3: '#344054',
+                        themeDrkBlue: '#101828',
+                        themeLightGray: '#667085',
+                        themeLightGray2: '#D0D5DD',
+                        themeLightWhite: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        'body': ['Inter', 'sans-serif'],
+                        'dmSans': ["DM Sans", "sans-serif"]
+                    },
+                    flex: {
+                        '0-auto': '0 0 auto'
+                    },
+
+                    backgroundImage: {
+                        bgGradientColor: 'linear-gradient(90deg, #006838 0%, #39B54A 100%)',
+                        'downAngle': "url('images/down-angle.svg')",
+                    },
+                    transitionProperty: {
+                        'newAll': '0.5s all',
+
+                    },
+                    boxShadow: {
+                        'customShadow': '3px 3px 2px rgba(0, 0, 0, 0.3)',
+                        'customShadow-2': '3px 3px 5px rgba(0, 0, 0, 0.4)',
+                        'customShadow-3': '0px 1px 2px rgba(16, 24, 40, 0.05)',
+                        'customShadow-4': '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)',
+                    },
+                    backgroundSize: {
+                        'custmSize': '33px',
+                        'custmSize2': '25px',
+                        'custmSizeXS': '20px',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body class="font-body bg-white text-darkGrayColor text-base tracking-[-0.448px]">
+
+    <!-- WHEN OPEN SIDEBAR THIS OVERLAY SHOW -->
+    <button class="navoverlay fixed w-full h-full top-0 left-0 z-[99] opacity-30 bg-darkGreenColor hidden cursor-auto" type="button"></button>
+
+
+    <!-- LEFT SIDEBAR START -->
+    <aside
+    class="bg-white w-[var(--sideBarWidth)] h-screen fixed top-0 left-0 flex flex-col z-[100] pt-12 pb-6 lg:py-[30px] -translate-x-full lg:translate-x-0 transition duration-500 ease-in-out left_sidebar border-r-[1px] border-r-borderColor2">
+    <button class="absolute top-2 right-2 z-10 w-[33px] h-7 p-0 outline-none border-0 shadow-none navbar-toggler block lg:hidden" type="button">
+        <span class="stick"></span>
+    </button>
+    <div class="sidebar_logo px-[15px] lg:px-[30px] text-center mb-[10px] lg:mb-[32px]">
+        <a href="dashboard.html" class="navbar-brand inline-block max-w-[120px] lg:max-w-[180px] w-full">
+            <img src="images/logo-v2.svg" alt="" class="inline-block max-w-full">
+        </a>
+    </div>
+    <div class="lg:text-base text-sm text-themeDrkBlue uppercase font-bold w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 xl:py-4 lg:pb-[25px] pb-[10px]">ENTITIES</div>
+    <ul class="flex grow flex-col max-h-full overflow-auto">
+        <li>
+            <!-- FOR ACTIVE MENU => add class "bg-darkGreenColor" -->
+            <a href="dashboard.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/house2.svg" alt=""></span>
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="affiliate-url.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/link.svg" alt=""></span>
+                Affiliate URLs
+            </a>
+        </li>
+        <li>
+            <a href="leads.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/referral.svg" alt=""></span>
+                Leads
+            </a>
+        </li>
+        <li>
+            <a href="payouts.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-greenColor bg-greenColor/[0.2] hover:bg-greenColor/[0.2] grayscale-0 hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/money.svg" alt=""></span>
+                Payouts
+            </a>
+        </li>
+        <li>
+            <a href="resource.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/folder.svg" alt=""></span>
+                Resources
+            </a>
+        </li>
+        <li>
+            <a href="settings.html"
+                class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/settings.svg" alt=""></span>
+                Settings
+            </a>
+        </li>
+    </ul>
+</aside>
+<!-- LEFT SIDEBAR END -->
+
+<main class="lg:pl-[var(--sideBarWidth)] flex flex-col min-h-screen 2xl:pr-[140px]">
+         <!-- PAGE HEADER START -->
+         <header class="bg-white py-[10px] border-b-[1px] border-b-borderColor2 sticky top-0 left-0 w-full z-50">
+            <div class="container full">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <button class="relative w-[33px] h-7 p-0 outline-none border-0 shadow-none mr-4 navbar-toggler block lg:hidden" type="button">
+                            <span class="stick"></span>
+                        </button>
+                        <!-- <p class="font-bold text-greenColor text-base xs:text-xl leading-[1.5] font-dmSans">Dashboard</p> -->
+                    </div>
+
+                    <!-- COMMON DROP DOWN START -->
+                    <div class="relative cmnDropDown">
+                        <a href="javascript:void(0);"
+                            class="dropdownBtn flex items-center bg-hdrDrpColor text-xs text-themeGray3 py-[5px] px-[7px] rounded-[10.8px] font-dmSans leading-[1]">
+                            <span class="inline-flex w-[28px] h-[28px] items-center text-xs uppercase font-[600] text-white justify-center bg-themeLightGreen mr-[5px] rounded-[100%]">D</span> Dominic <img class="ml-[6px] flex-0-auto w-[10px]" src="images/down-angle.svg" alt="">
+                        </a>
+                        <div
+                            class="cmnDropDownList absolute top-[100%] right-0 z-[2] min-w-[170px] bg-hdrDrpColor rounded-[5px] mt-1 hidden">
+                            <ul class="py-[10px]">
+                                <li><a href="#" class="text-greenColor hover:text-darkGrayColor px-4 py-1 text-xs font-medium transition duration-500 ease-in-out w-full">Option 1</a></li>
+                                <li><a href="#" class="text-greenColor hover:text-darkGrayColor px-4 py-1 text-xs font-medium transition duration-500 ease-in-out w-full">Option 2</a></li>
+                                <li><a href="#" class="text-greenColor hover:text-darkGrayColor px-4 py-1 text-xs font-medium transition duration-500 ease-in-out w-full">Option 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- COMMON DROP DOWN END -->
+
+                </div>
+            </div>
+        </header>
+        <!-- PAGE HEADER END -->
+
+        <div class="2xl:pb-16 2xl:pt-14 py-7 md:py-10 grow relative">
+            <div class="container full">
+                <!-- PAGE HEADING -->
+                <div class="mb-4">
+                    <h1 class="text-themeDrkBlue text-[20px] lg:text-[27px] font-semibold tracking-[-1px]">Payouts</h1>
+                </div>
+
+                <!-- SEARCH FORM -->
+                <div class="mb-6">
+                    <form>
+                        <div class="flex item-center flex-wrap">
+                            <input type="text" placeholder="Search..."
+                                style="background-image: url('images/search-icon-g.svg');"
+                                class="placeholder:text-themeLightGray bg-[13.7px] bg-no-repeat bg-[left_10px_center] sm:bg-[left_15px_center] text-themeLightGray w-full h-[40px] px-4 pl-[40px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow outline-none font-medium text-sm focus:border-lightGreen focus-visition:border-lightGreen w-full xs:w-auto flex-0-auto xs:flex-1 rounded-[7px]">
+                            <div class="flex-0-auto xs:pl-[22px] w-full xs:w-auto mt-[10px] xs:mt-0">
+                                <button type="submit"
+                                    class="inline-flex items-center bg-bgGradientColor font-semibold text-sm leading-[1] text-white px-[14px] py-[11px] rounded-[7px] text-center transition duration-500 ease-in-out hover:opacity-80 h-[40px] w-full xs:w-auto justify-center">
+                                    <img class="w-[13px] mr-[10px]" src="images/search-icon-w.svg" alt="">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- COMMON TABLE WPR -->
+                    <div class="border-[1px] border-borderColor2 rounded-[10px] w-[100%] overflow-auto">
+                        <table class="w-[100%]">
+                            <tr>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[10px] text-themeGray whitespace-nowrap">Date Added</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[10px] text-themeGray whitespace-nowrap">Amount</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[10px] text-themeGray whitespace-nowrap">Payout Method</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[10px] text-themeGray whitespace-nowrap">Status</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[10px] text-themeGray whitespace-nowrap">Payout Account</th>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">03/06/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 382.98</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#B54708] bg-[#FFFAEB] py-[4px] px-[10px] border-[1px] border-[#FEDF89] rounded-[15px]">Pending</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">03/02/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 465.12</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">04/07/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 345.77</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">02/06/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 456.90</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">03/04/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 123.72</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">02/07/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 245.75</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">04/05/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 145.89</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">03/02/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$ 238.75</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Payout Service</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap"><span class="text-xs font-medium text-[#067647] bg-[#ECFDF3] py-[4px] px-[10px] border-[1px] border-[#ABEFC6] rounded-[15px]">Paid</span></td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">BANK (****1234)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="custom-style.css">
+
+</body>
+
+</html>

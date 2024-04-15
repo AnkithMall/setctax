@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0 ">
+    <title>Compare Credit - Client Dashboard</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configaration script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        center: true,
+                        padding: {
+                            DEFAULT: '16px',
+                            // sm: '15px',
+                            lg: '20px',
+                            xl: '30px',
+                            '2xl': '60px',
+                        },
+                    },
+                    screens: {
+                        'xs': '480px',
+                        // => @media (min-width: 480px) { ... }
+                        'sm': '576px',
+                        // => @media (min-width: 640px) { ... }
+                        'md': '768px',
+                        // => @media (min-width: 768px) { ... }
+                        'lg': '992px',
+                        // => @media (min-width: 992px) { ... }
+                        'xl': '1200px',
+                        // => @media (min-width: 1200px) { ... }
+                        '2xl': '1400px',
+                        // => @media (min-width: 1200px) { ... }
+                    },
+
+                    colors: {
+                        bodyBg: '#DEECE3',
+                        greenColor: '#006838',
+                        lightGreen: '#018D1E',
+                        darkGreenColor: '#00250B',
+                        redColor: '#DB0000',
+                        darkGrayColor: '#333333',
+                        grayColor: '#696969',
+                        lightGray: '#BABABA',
+                        black: '#000000',
+                        white: '#ffffff',
+                        borderColor: '#7F7F7F',
+
+                        themeLightGreen: '#39B54A',
+                        hdrDrpColor: '#E0EDE7',
+                        themeGray: '#475467',
+                        themeGray3: '#344054',
+                        themeDrkBlue: '#101828',
+                        themeLightGray: '#667085',
+                        themeLightGray2: '#D0D5DD',
+                        themeLightWhite: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        'body': ['Inter', 'sans-serif'],
+                        'dmSans': ["DM Sans", "sans-serif"]
+                    },
+                    flex: {
+                        '0-auto': '0 0 auto'
+                    },
+
+                    backgroundImage: {
+                        bgGradientColor: 'linear-gradient(90deg, #006838 0%, #39B54A 100%)',
+                        'downAngle': "url('images/down-angle.svg')",
+                    },
+                    transitionProperty: {
+                        'newAll': '0.5s all',
+
+                    },
+                    boxShadow: {
+                        'customShadow': '3px 3px 2px rgba(0, 0, 0, 0.3)',
+                        'customShadow-2': '3px 3px 5px rgba(0, 0, 0, 0.4)',
+                        'customShadow-3': '0px 1px 2px rgba(16, 24, 40, 0.05)',
+                        'customShadow-4': '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)',
+                    },
+                    backgroundSize: {
+                        'custmSize': '33px',
+                        'custmSize2': '25px',
+                        'custmSizeXS': '20px',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body class="font-body bg-white text-darkGrayColor text-base">
+
+    <!-- WHEN OPEN SIDEBAR THIS OVERLAY SHOW -->
+    <!-- <button class="navoverlay fixed w-full h-full top-0 left-0 z-[99] opacity-30 bg-darkGreenColor hidden cursor-auto" type="button"></button> -->
+
+    <!-- PAGE HEADER START -->
+    <header class="bg-white py-3 lg:py-4 xl:py-5 border-b border-[#EAECF0] border-solid">
+        <div class="container full md:pr-5">
+            <div class="flex items-center justify-between">
+                <a href="#" class="inline-block w-full max-w-[130px] xl:max-w-[159px] brand_logo">
+                    <img src="../images/logo2.svg" alt="" class="w-full">
+                </a>
+
+                <!-- COMMON DROP DOWN START -->
+                <div class="relative cmnDropDown">
+                    <a href="#" class="dropdownBtn flex items-center justify-center text-themeGray3 text-[0] md:text-sm leading-[0] md:leading-[1] md:bg-hdrDrpColor md:rounded-xl md:py-[6px] md:pl-2 md:pr-2 xl:pr-[14px]">
+                        <span class="hidden bg-themeLightGreen text-sm font-semibold text-white w-7 xl:w-8 h-7 xl:h-8 rounded-full md:flex items-center justify-center overflow-hidden mr-1">
+                            <!-- FOR NO IMAGE START -->
+                            D
+                            <!-- FOR NO IMAGE END -->
+
+                            <!-- FOR IMAGE START -->
+                            <!-- <img src="../images/post1.jpg" alt="" class="w-full h-full object-cover"> -->
+                            <!-- FOR IMAGE END -->
+
+                        </span>
+                        Dominic 
+                        <img class="ml-[10px] flex-0-auto w-[10px] xl:w-[14px] hidden md:block" src="../images/gray-dwnarrw.svg" alt="">
+                        <img src="../images/menu-icon.svg" alt="" class="md:hidden block w-[18px]">
+                    </a>
+                    <div
+                        class="cmnDropDownList absolute top-[100%] right-0 z-[2] min-w-[170px] bg-hdrDrpColor rounded-xl mt-1 hidden">
+                        <ul class="py-[10px]">
+                            <li><a href="#" class="text-themeGray3 px-4 py-1 text-sm block w-full transition duration-500 ease-in-out hover:bg-themeLightGreen hover:text-white">Account</a></li>
+                            <li><a href="#" class="text-themeGray3 px-4 py-1 text-sm block w-full transition duration-500 ease-in-out hover:bg-themeLightGreen hover:text-white">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- COMMON DROP DOWN END -->
+
+            </div>
+        </div>
+    </header>
+    <!-- PAGE HEADER END -->
+
+
+    <main>
+
+        <section class="pt-8 md:pt-10 xl:pt-[60px] pb-16 xl:pb-[151px]">
+            <div class="container full">
+                <div class="flex flex-wrap md:-mx-4">
+                    <div class="md:px-4 flex-0-auto w-full md:w-1/3 xl:w-[27%]">
+                        <ul class="tabList">
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">1.</span>
+                                Application Submitted
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">2.</span>
+                                Complete Questionnaire
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">3.</span>
+                                Verify Identity
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">4.</span>
+                                Waiting on IRS
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">5.</span>
+                                Documents & Calculations Complete
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">6.</span>
+                                Sign Agreements
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">7.</span>
+                                Payment Options
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                            <li class="py-3.5 xs:py-3 pl-4 pr-9 xs:pr-8 relative text-themeLightGray text-base xs:text-sm bg-themeLightWhite rounded-[6px] border border-themeLightGray2 border-solid flex transition duration-500 ease-in-out mb-4">
+                                <span class="mr-2">8.</span>
+                                Package Shipped
+                                <span class="doneTick absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/green-tick.svg" alt=""></span>
+                                <span class="rghtArrw  absolute top-1/2 right-[18px] -translate-y-1/2 transition duration-500 ease-in-out opacity-0"><img src="../images/right-arrw.svg" alt=""></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:px-4 flex-0-auto w-full md:w-2/3 xl:w-[73%]">
+                        <div class="allTabs">
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h1 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Answer the questionnaire to move to the next step</h1>
+                                    <p>Fill out the questionnaire so we can learn more about how Covid affected you and your work during 2020 and 2021. Once this is complete, we can move on to get you your return!</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Complete Questionnaire</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Answer the questionnaire to move to the next step</h2>
+                                    <p>Fill out the questionnaire so we can learn more about how Covid affected you and your work during 2020 and 2021. Once this is complete, we can move on to get you your return!</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Complete verification and calculate exact amount</h2>
+                                    <p>Upload a photo ID, take a selfie, and then we are able to access to your IRS Tax Documents. No need to dig for old documents and struggle with upload. After that, our software calculates your returnable amount.</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Your return amount is being calculated.</h2>
+                                    <p>The IRS is currently preparing your tax documents to send back to us. This will allow us to calculate and prepare the exact amount This process could take 3-7 days. In the meantime, Refer a Friend! Unlock up to $4,000 of free business growth guides! </p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Congratulations! You qualified for <span class="text-greenColor text-xl xs:text-[22px] md:text-[26px] xl:text-4xl xs:tracking-[-0.02em]">$ 18,672</span></h2>
+                                    <p>Documents package is complete and your exact credit amount is $18,672. Proceed to Sign Agreements and Select Your Payment Option.</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Congratulations! You qualified for <span class="text-greenColor text-xl xs:text-[22px] md:text-[26px] xl:text-4xl xs:tracking-[-0.02em]">$ 18,672</span></h2>
+                                    <p>Documents package is complete and your exact credit amount is $18,672. Proceed to Sign Agreements and Select Your Payment Option.</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Congratulations! You qualified for <span class="text-greenColor text-xl xs:text-[22px] md:text-[26px] xl:text-4xl xs:tracking-[-0.02em]">$ 18,672</span></h2>
+                                    <p>Documents package is complete and your exact credit amount is $18,672. Proceed to Sign Agreements and Select Your Payment Option.</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each_tabs">
+                                <div class="mb-3">
+                                    <video class="w-full rounded-lg overflow-hidden" controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                        <!-- <source src="../images/video1.mp4" type="video/mp4"> -->
+                                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                                      </video>
+                                </div>
+                                <div class="text-themeGray text-base xl:text-lg xl:text-xl leading-[1.5] relative">
+                                    <!-- FOR SEO PERPOSE WE HAVE USED ONE H1 TAG -->
+                                    <h2 class="text-themeDrkBlue font-semibold text-lg xs:text-xl md:text-2xl xl:text-3xl mb-2 xl:mb-3">Signed, Sealed, & Delivered (Almost)</h2>
+                                    <p>Your package with all of your paperwork is out for delivery right now. Once you receive it, please sign and send it back with the prepaid label we provided.</p>
+                                    <div class="pt-6">
+                                        <a href="javascript:void(0);" class="w-full inline-block py-2 xs:py-[10px] px-4 bg-gradient-to-r from-[#006838] from-0% to-[#39B54A] to-100% shadow-customShadow-3 rounded-lg font-semibold text-sm xs:text-base text-white text-center relative z-[2] before:absolute before:content before:top-[1px] before:bottom-[1px] before:left-[1px] before:right-[1px] before:rounded-[6px] before:bg-white before:z-[-1] before:transition before:duration-500 before:ease-in-out before:opacity-0 hover:before:opacity-100 hover:text-darkGrayColor tabBtn">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THIS SECTION IS ONLY SHOW IN MOBILE VIEW START -->
+        <section class="block md:hidden pb-16">
+            <div class="container full">
+                <div class="p-4 pt-[18px] rounded-lg border border-[#E5E7EB] border-solid shadow-customShadow-4 bg-white flex flex-col items-center">
+                    <span class="inline-block leading-[1] mb-[18px]"><img src="../images/msg.svg" alt=""></span>
+                    <h2 class="text-[#111928] font-semibold text-base mb-5">Talk To Us!</h2>
+                    <div class="w-full mb-[19px]">
+                        <form class="flex flex-wrap">
+                            <input type="text" placeholder="Write your message here..." class="flex-1 rounded-lg px-4 text-themeGray3 text-sm leading-[1.5] border border-[#D1D5DB] border-solid h-9 placeholder:text-[#themeGray3] transition duration-500 ease-in-out focus:border-lightGreen focus-visible:border-lightGreen focus-visible:outline-none">
+                            <div class="flex items-center justify-center w-[42px] ml-2 flex-0-auto">
+                                <button type="submit" class="transition duration-500 ease-in-out hover:scale-125 focus-visible:outline-none"><img src="../images/send-icon.svg" alt="" class="w-5"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w-full relative z-[1] before:absolute before:content before:w-full before:h-px before:bg-[#E5E7EB] before:top-1/2 before:left-0 before:translate-y-1/2 before:z-[-1] mb-4 flex items-center justify-center">
+                        <span class="realtive z-[2] bg-white px-6 text-[#6B7280] text-base font-medium leading-[1]">or</span>
+                    </div>
+                    <a href="#" class="py-2 px-3 text-themeGray3 font-semibold text-sm flex items-center justify-center w-full rounded-lg relative z-[1] bg-bgGradientColor after:absolute after:content-[''] after:top-[2px] after:left-[2px] after:bottom-[2px] after:right-[2px] after:bg-white after:z-[-2] after:transition after:duration-500 after:ease-in-out after:rounded hover:after:opacity-0 after:rounded-[6px] hover:text-white">
+                        <span class="mr-[6px]"><img src="../images/call-icon.svg" alt=""></span>
+                        Call Customer Support
+                    </a>
+                </div>
+            </div>
+        <!-- THIS SECTION IS ONLY SHOW IN MOBILE VIEW END -->
+
+        </section>
+    </main>
+
+
+    <footer class="bg-[#001F11]">
+        <div class="container full 2xl:px-20">
+            <div class="pt-8 xl:pt-9 pb-4 xl:pb-6">
+                <div class="flex flex-wrap md:-mx-4">
+                    <div class="flex-0-auto md:px-4 w-full md:w-2/5 lg:w-[49%]">
+                        <div class="relative max-w-xs lg:max-w-[255px] w-full text-white text-base leading-[1.5] text-center md:text-left mx-auto mb-11 xs:mb-5 md:m-0">
+                            <a href="#" class="inline-block w-full max-w-[145px] xs:max-w-36 lg:max-w-[180px] xl:max-w-[229px] mb-4">
+                                <img src="../images/white-logo2.png" alt="">
+                            </a>
+                            <p>2598 E. Sunrise Blvd., Suite 2104, Fort Lauderdale, Florida, 33304</p>
+                            <ul class="mt-4 xs:mt-2 xl:mt-4 flex items-center justify-center md:justify-start">
+                                <li class="mr-4"><a href="#" class="inline-block w-6 transition duration-500 ease-in-out hover:scale-125"><img class="w-full" src="../images/instagram.svg" alt=""></a></li>
+                                <li><a href="#" class="inline-block w-6 transition duration-500 ease-in-out hover:scale-125"><img class="w-full" src="../images/Facebook.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-0-auto md:px-4 w-full md:w-3/5 lg:w-[51%]">
+                        <div class="flex flex-wrap justify-between xs:-mx-4">
+                            <div class="xs:px-4 flex-0-auto w-full xs:w-auto text-center xs:text-left order-2 xs:order-1">
+                                <div class="font-semibold text-base text-white leading-[1.5] mb-6">
+                                    <p>FAQs</p>
+                                </div>
+                                <ul>
+                                    <!-- FOR THE LAST CHILD REMOVE THIS CLASS "mb-6" -->
+                                    <li class="mb-6 xs:mb-3 xl:mb-6">
+                                        <a href="#" class="inline-block font-semibold uppercase text-base text-white leading-[1.5] transition duration-500 ease-in-out hover:text-themeLightGreen transition duration-500 ease-in-out hover:text-themeLightGreen">Disclaimer</a>
+                                    </li>
+                                    <li class="mb-6 xs:mb-3 xl:mb-6">
+                                        <a href="#" class="inline-block font-semibold uppercase text-base text-white leading-[1.5] transition duration-500 ease-in-out hover:text-themeLightGreen transition duration-500 ease-in-out hover:text-themeLightGreen">Terms of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="inline-block font-semibold uppercase text-base text-white leading-[1.5] transition duration-500 ease-in-out hover:text-themeLightGreen transition duration-500 ease-in-out hover:text-themeLightGreen">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="xs:px-4 flex-0-auto w-full xs:w-auto text-center xs:text-left mb-6 xs:mb-0 order-1 xs:order-2">
+                                <div class="font-semibold text-base text-white leading-[1.5] uppercase mb-6">
+                                    <p>Contact Us</p>
+                                </div>
+                                <ul>
+                                    <!-- FOR THE LAST CHILD REMOVE THIS CLASS "mb-6" -->
+                                    <li class="mb-6 xs:mb-3 xl:mb-6">
+                                        <a href="tel:(888)SETC-TAX" target="_blank" class="inline-block font-light text-base text-white leading-[1.5] transition duration-500 ease-in-out hover:text-themeLightGreen">(888) SETC-TAX</a>
+                                    </li>
+                                    <li class="mb-6 xs:mb-3 xl:mb-6">
+                                        <a href="mailto:info@setctaxreturn.com" target="_blank" class="inline-block font-light text-base text-white leading-[1.5] transition duration-500 ease-in-out hover:text-themeLightGreen">info@setctaxreturn.com</a>
+                                    </li>
+                                    <li>
+                                        <p class="inline-block font-light text-base text-white leading-[1.5]">Mon-Sat 9:00 AM-7:00 PM EST</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-6 xs:pt-4 xl:pt-6 pb-4 xs:pb-7 xl:pb-9 text-center text-[#9CA3AF] text-base leading-[1.5] xs:border-t xs:border-[#374151] xs:border-solid relative xs:before:hidden before:absolute before:content before:-left-4 before:-right-4 before:h-px before:bg-[#374151] before:top-0">
+                <p>© 2022 <a href="#" target="_blank" class="transition duration-500 ease-in-out hover:text-themeLightGreen">Flowbite</a>, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../custom-style.css">
+
+</body>
+
+</html>
