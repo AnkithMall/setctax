@@ -1,4 +1,20 @@
 jQuery(document).ready(function ($) {
+    
+    $('.create_campaign_btn').on('click', function () {
+        $('.popup_outtr_campaign').removeClass('hidden');
+        setTimeout(() => {
+            $('.genarate-url-popUp-campaign').removeClass('invisible opacity-0 pointer-events-none translate-y-4');
+        }, 100);
+    });
+
+    // Function to close the campaign creation form popup
+    $('.popup-close-btn-campaign').on('click', function () {
+        $('.genarate-url-popUp-campaign').addClass('opacity-0 pointer-events-none translate-y-4');
+        setTimeout(() => {
+            $('.genarate-url-popUp-campaign').addClass('invisible');
+            $('.popup_outtr_campaign').addClass('hidden');
+        }, 400);
+    });
 
     $('.dropdownBtn').on('click', function () {
         if($(this).closest('.cmnDropDown').hasClass('active')){

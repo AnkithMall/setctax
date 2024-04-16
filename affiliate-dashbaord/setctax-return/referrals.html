@@ -163,7 +163,7 @@
                 </li>
                 <li>
                     <a href="referrals.html"
-                        class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                        class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-greenColor bg-greenColor/[0.2] hover:bg-greenColor/[0.2] grayscale-0 hover:grayscale-0">
                         <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
                                 src="images/referral.svg" alt=""></span>
                             Referrals
@@ -187,7 +187,7 @@
                 </li>
                 <li>
                     <a href="settings.html"
-                        class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-greenColor bg-greenColor/[0.2] hover:bg-greenColor/[0.2] grayscale-0 hover:grayscale-0">
+                        class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
                         <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
                                 src="images/settings.svg" alt=""></span>
                         Settings
@@ -231,105 +231,136 @@
         </header>
         <!-- PAGE HEADER END -->
 
+
+
         <!-- MAIN CONTENT START -->
         <div class="2xl:pb-16 2xl:pt-14 py-7 md:py-10 grow relative">
             <div class="container full">
-                <div class="relative">
+                <div class="mb-4 xs:mb-6 md:mb-9 pt-2 relative">
     
                     <!-- PAGE HEADER START -->
-                    <div class="mb-4 pb-[18px] border-b-[1px] border-b-borderColor2">
-                        <h1 class="text-themeDrkBlue text-[20px] lg:text-[27px] font-semibold tracking-[-1px]">Settings</h1>
+                    <div class="pb-[22px] border-b-[1px] border-b-borderColor2">
+                        <h1 class="text-themeDrkBlue text-[20px] lg:text-[27px] font-semibold tracking-[-1px]">Referrals</h1>
                     </div>
                     <!-- PAGE HEADER END -->
-                    
-                    <div class="relative">
-                        <form action="#">
-                        <!-- REMOVE THIS CLASS => mb-[86px] FOR THE LAST CHILD -->
-                        <div class="flex flex-wrap mb-[18px] pb-[18px] border-b-[1px] border-b-borderColor2">
-                            <!-- COMMON HEADER START -->
-                            <div class="max-w-full md:max-w-[220px] xl:max-w-[280px] 2xl:max-w-[280px] w-full font-medium pb-1 md:pb-0 md:pr-6 xl:pr-9 2xl:pr-9 flex-0-auto">
-                                <h2 class="font-medium text-sm text-[#182230] leading-none mb-3">Edit Profile</h2>
-                                <!-- <p>Use this form to generate more referral links.</p> -->
-                            </div>
-                            <!-- COMMON HEADER END -->
     
-                            <div class="flex-1 bg-white shadow rounded-[15px] p-[18px] border-[1px] border-borderColor2">
-                                    <div class="flex flex-wrap -mx-3 sm:-mx-5">
-                                        <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">First Name</label>
-                                                <input type="text" placeholder="First Name" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                        <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Last Name</label>
-                                                <input type="text" placeholder="Last Name" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                        <div class="w-full px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Email</label>
-                                                <input type="email" placeholder="myname@email.com" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                        <div class="w-full px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Phone Number</label>
-                                                <input type="tel" placeholder="Phone Number" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
+                    <div class="flex items-start flex-wrap justify-between py-[22px] border-b-[1px] border-b-borderColor2">
+    
+                        <!-- COMMON HEADER START -->
+                        <div class="max-w-full md:max-w-[220px] xl:max-w-[280px] 2xl:max-w-[336px] w-full font-medium pb-6 md:pb-0 md:pr-6 xl:pr-9 2xl:pr-[100px] flex-0-auto">
+                            <h2 class="font-medium text-sm text-themeDrkBlue leading-[1] mb-1">Invite Other Marketers</h2>
                         </div>
+                        <!-- COMMON HEADER END -->
     
-                        <div class="flex flex-wrap">
-                            <!-- COMMON HEADER START -->
-                            <div class="max-w-full md:max-w-[220px] xl:max-w-[280px] 2xl:max-w-[280px] w-full font-medium pb-1 md:pb-0 md:pr-6 xl:pr-9 2xl:pr-9 flex-0-auto">
-                                <h2 class="font-medium text-sm text-[#182230] leading-none mb-3">Change Password</h2>
-                            </div>
-                            <!-- COMMON HEADER END -->
-    
-                            <div class="flex-1 bg-white shadow rounded-[15px] p-[18px] border-[1px] border-borderColor2 w-full">
-                                <div class="flex flex-wrap -mx-3 sm:-mx-5">
-                                    <div class="w-full px-3 sm:px-5 flex-0-auto">
-                                        <div class="mb-5">
-                                            <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Current Password</label>
-                                            <input type="password" placeholder="Current Password" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                        </div>
+                        <div class="flex-1 bg-white shadow-md rounded-2xl p-[18px] border-[1px] border-[#F2F4F7]">
+                            <p class="pt-[18px] px-[18px] font-regular text-[14.4px] text-themeGray3 leading-[21.6px]">
+                                This page enables you to extend invitations to other marketers to join the system. Upon successfully inviting a new marketer, you'll earn a commission from their earnings. The greater the number of marketers you invite, the higher your potential earnings. You can easily invite a new user by sharing your referral link with them. Alternatively, you can send an invitation letter by completing the fields below.
+                            </p>
+                            <form class="pt-[18px] px-[18px] flex flex-wrap -mx-3 sm:-mx-5">
+                                <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
+                                    <div class="mb-5">
+                                        <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">First Name</label>
+                                        <input type="text" placeholder="First Name" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
                                     </div>
-                                        <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">New Password</label>
-                                                <input type="password" placeholder="New Password" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                        <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
-                                            <div class="mb-5">
-                                                <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Confirm Password</label>
-                                                <input type="password" placeholder="Confirm Password" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-
-
-                                <div class="pt-6 lg:pt-[40px] text-right w-full">
-                                    <button type="submit" class="bg-bgGradientColor font-semibold text-base leading-6 text-white py-[8px] px-[14px] rounded-[7px] text-center transition duration-500 ease-in-out hover:opacity-80 min-w-[100px] lg:min-w-[190px] mr-4 lg:mr-[40px]">Save</button>
-                                    <button type="submit" class="bg-[#7A7A7A] font-semibold text-base leading-6 text-white  py-[8px] px-[14px] rounded-[7px] text-center transition duration-500 ease-in-out hover:opacity-80 min-w-[100px] lg:min-w-[190px]">Cancel</button>
-                                    <!-- <input type="submit" value="Save user settings" class="bg-bgGradientColor font-semibold text-base leading-6 text-white py-2 px-3 rounded-[5px] text-center transition duration-500 ease-in-out hover:opacity-80 cursor-pointer"> -->
                                 </div>
+                                <div class="w-full xs:w-1/2 px-3 sm:px-5 flex-0-auto">
+                                    <div class="mb-5">
+                                        <label class="font-semibold text-sm text-themeGray3 leading-none inline-block mb-3">Email</label>
+                                        <input type="email" placeholder="Email" class="text-themeLightGray placeholder:text-themeLightGray block w-full h-[40px] px-[15px] rounded-[7px] border-[1px] border-solid border-themeLightGray2 transition duration-300 ease-in-out shadow-none outline-none font-regular text-sm focus:border-lightGreen focus-visition:border-lightGreen">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row-reverse w-full px-[18px]">
+                                    <button type="submit" class="bg-bgGradientColor font-semibold text-base leading-6 text-white py-[8px] px-[14px] rounded-[7px] text-center transition duration-500 ease-in-out hover:opacity-80 min-w-[100px] lg:min-w-[190px]">Send Invitation</button>
+                                </div>
+                            </form>
                         </div>
-
-                        </form>
-
                     </div>
     
+                    <div class="flex flex-wrap justify-start py-[22px] border-b-[1px] border-b-borderColor2">
+    
+                        <!-- COMMON HEADER START -->
+                        <div class="max-w-full md:max-w-[220px] xl:max-w-[280px] 2xl:max-w-[336px] w-fit font-medium pb-6 md:pr-6 xl:pr-9 2xl:pr-[100px] flex-0-auto pt-2">
+                            <h2 class="font-medium text-sm text-themeDrkBlue leading-[1] mb-1 ">Referral Link</h2>
+                        </div>
+                        <!-- COMMON HEADER END -->
+                        <div class="flex flex-wrap gap-[35px] xs:gap-[65px] items-center justify-center xs:justify-start border-themeLightGray2 px-0 xs:px-[14px] bg-white grow copy-link-wpr">
+                            <div class="flex items-center w-full xs:w-auto xs:flex-1 py-[7px] px-[12.6px] text-center xs:text-left border-lightGreen border-[1px] rounded-[7.2px]">
+                                <p class="text-[14px] text-themeDrkBlue grow mr-0 xs:mr-8 break-all copy-txt">setctaxreturn.com/?source=mycompanyname</p>
+                            </div>
+                            <button class="copy-link-btn bg-bgGradientColor font-semibold text-base leading-6 text-white py-[8px] px-[14px] rounded-[7px] text-center transition duration-500 ease-in-out hover:opacity-80 min-w-[100px] lg:min-w-[190px]"> Copy Referral Link</button>
+                        </div>
+                           <!-- <div class="flex-1 ">
+                            <a href="javascript:void(0);"
+                            class="group px-5 py-2 leading-6 font-semibold text-sm rounded-[7.2px] relative z-[1] bg-bgGradientColor after:absolute after:content-[''] after:top-[2px] after:left-[2px] after:bottom-[2px] after:right-[2px] after:bg-white after:z-[-2] after:transition after:duration-500 after:ease-in-out after:rounded after:opacity-0 hover:after:opacity-100 inline-flex justify-center text-white create_url">
+                            <img class="w-[10px] mr-[10px] brightness-[0] invert-[1] group-hover:invert-[0] group-hover:brightness-[1]" src="images/plus-icon-g.svg" alt="">
+                            <span class="group-hover:text-greenColor">Copy Referral Link</span>
+                        </a>
+                           </div> -->
+                   
+    
                 </div>
+
+                <div class="flex items-center flex-wrap justify-between py-[22px]">
+    
+                    <!-- COMMON HEADER START -->
+                    <div class="w-[100%]">
+                        <h2 class="font-medium text-sm text-themeDrkBlue leading-[1] mb-4">Referral Marketers</h2>
+                    </div>
+                    <!-- COMMON HEADER END -->
+                    <div class="border-[1px] border-borderColor2 rounded-[10px] w-[100%] overflow-auto">
+                        <table class="w-[100%]">
+                            <tr>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Name</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Company</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Date Added</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Earnings</th>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Jason Smith</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Marketing Central</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">4/3/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$142.65</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Leo Waters</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">P3 Media</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">3/25/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$1,561.92</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Kelsey Norton</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Individual</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">3/19/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$24,582.69</td>
+                            </tr>
+                            <tr>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Elizabeth Tems</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Fly Social</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">2/27/24</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">$204,492.57</td>
+                            </tr>
+                        </table>
+                    </div>
+                   
+                </div>
+
+
+
+
             </div>
         </div>
+
+
+
+         
+
+        </div>
         <!-- MAIN CONTENT END -->
+
+
     </main>
+
+
 
 
     <!-- Jquery-->

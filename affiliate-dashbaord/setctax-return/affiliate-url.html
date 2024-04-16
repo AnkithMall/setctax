@@ -138,6 +138,22 @@
                     </a>
                 </li>
                 <li>
+                    <a href="leads.html"
+                        class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                        <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                                src="images/leads.svg" alt=""></span>
+                        Leads
+                    </a>
+                </li>
+                <li>
+                    <a href="campaign.html"
+                    class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
+                    <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
+                        src="images/campaign.svg" alt=""></span>
+                        Campaigns
+                    </a>
+                </li>
+                <li>
                     <a href="affiliate-url.html"
                         class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-greenColor bg-greenColor/[0.2] hover:bg-greenColor/[0.2] grayscale-0 hover:grayscale-0">
                         <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
@@ -146,11 +162,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="leads.html"
+                    <a href="referrals.html"
                         class="flex items-center w-full px-4 xl:pl-8 2xl:pl-13 xl:pr-4 py-3 text-xs text-themeGray  hover:text-greenColor hover:bg-greenColor/[0.2] grayscale  hover:grayscale-0">
                         <span class="w-6 xl:w-[21px] inline-flex items-center justify-center leading-[1] mr-[10px]"><img
                                 src="images/referral.svg" alt=""></span>
-                        Leads
+                            Referrals
                     </a>
                 </li>
                 <li>
@@ -276,35 +292,58 @@
                     <div class="border-[1px] border-borderColor2 rounded-[10px] w-[100%] overflow-auto">
                         <table class="w-[100%]">
                             <tr>
-                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray w-[33.333%] whitespace-nowrap">Code</th>
-                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray w-[33.333%] whitespace-nowrap">Type</th>
-                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray w-[33.333%] whitespace-nowrap"></th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Campaign Name</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">URL Code</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">URL Parameters</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap">Medium</th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap"></th>
+                                <th class="p-[11px] border-b-[1px] border-b-borderColor2 bg-[#FCFCFD] font-medium text-[11px] text-themeGray whitespace-nowrap"></th>
                             </tr>
                             <tr class="copy-link-wpr">
-                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/FJEk935cs/?source_id=facebookform1</td>
-                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Facebook Ads</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">{Campaign Name}</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/FJEk935cs</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Facebook Forms</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">?source_id=facebookform1</td>
+                                <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
+                                    <button class="text-gray-600 inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px]"> Edit</button>
+                                </td>
                                 <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
                                     <button class="text-greenColor inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px] copy-link-btn"><img src="images/copy-icon.svg" alt="" class="flex-0-auto w-[15px] mr-2"> Copy</button>
                                 </td>
                             </tr>
                             <tr class="copy-link-wpr">
-                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">nOLea3z574</td>
-                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Google Ads</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">{Campaign Name}</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/nOLea3z574</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">Instagram Reels</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">?source_id=google_sub_1=ad</td>
+                                <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
+                                    <button class="text-gray-600 inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px]"> Edit</button>
+                                </td>
                                 <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
                                     <button class="text-greenColor inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px] copy-link-btn"><img src="images/copy-icon.svg" alt="" class="flex-0-auto w-[15px] mr-2"> Copy</button>
                                 </td>
                             </tr>
                             <tr class="copy-link-wpr">
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">{Campaign Name}</td>
                                 <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/JTqpvMPQIw</td>
                                 <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">LInkedIn Campaign</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">?source_id=reddit_sub_1=video</td>
+                                <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
+                                    <button class="text-gray-600 inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px]"> Edit</button>
+                                </td>
                                 <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
                                     <button class="text-greenColor inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px] copy-link-btn"><img src="images/copy-icon.svg" alt="" class="flex-0-auto w-[15px] mr-2"> Copy</button>
                                 </td>
                             </tr>
                             <tr class="copy-link-wpr">
-                                <td class="py-[20px] px-[10px] text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/A160XzIWKX</td>
-                                <td class="py-[20px] px-[10px] text-xs text-center text-themeGray3 font-regular whitespace-nowrap">-</td>
-                                <td class="text-center  px-[10px] whitespace-nowrap">
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">{Campaign Name}</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular copy-txt whitespace-nowrap">/A160XzIWKX</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">-</td>
+                                <td class="py-[20px] px-[10px] border-b-[1px] border-b-borderColor2 text-xs text-center text-themeGray3 font-regular whitespace-nowrap">-</td>
+                                <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
+                                    <button class="text-gray-600 inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px]"> Edit</button>
+                                </td>
+                                <td class="text-center px-[10px] border-b-[1px] border-b-borderColor2 whitespace-nowrap">
                                     <button class="text-greenColor inline-flex items-center justify-center text-center text-xs font-semibold py-[7px] border-[1px] border-themeLightGray2 px-[12px] rounded-[7px] copy-link-btn"><img src="images/copy-icon.svg" alt="" class="flex-0-auto w-[15px] mr-2"> Copy</button>
                                 </td>
                             </tr>
